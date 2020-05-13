@@ -1,0 +1,51 @@
+E:\Logic Field\LF Visual Studio 2015 Projects\Projects\Development\IOAS\IOAS\IOAS.DataModel\bin\Debug\IOAS.DataModel.dll.config
+E:\Logic Field\LF Visual Studio 2015 Projects\Projects\Development\IOAS\IOAS\IOAS.DataModel\bin\Debug\IOAS.DataModel.dll
+E:\Logic Field\LF Visual Studio 2015 Projects\Projects\Development\IOAS\IOAS\IOAS.DataModel\bin\Debug\IOAS.DataModel.pdb
+E:\Logic Field\LF Visual Studio 2015 Projects\Projects\Development\IOAS\IOAS\IOAS.DataModel\bin\Debug\EntityFramework.dll
+E:\Logic Field\LF Visual Studio 2015 Projects\Projects\Development\IOAS\IOAS\IOAS.DataModel\bin\Debug\EntityFramework.SqlServer.dll
+E:\Logic Field\LF Visual Studio 2015 Projects\Projects\Development\IOAS\IOAS\IOAS.DataModel\bin\Debug\EntityFramework.xml
+E:\Logic Field\LF Visual Studio 2015 Projects\Projects\Development\IOAS\IOAS\IOAS.DataModel\bin\Debug\EntityFramework.SqlServer.xml
+E:\Logic Field\LF Visual Studio 2015 Projects\Projects\Development\IOAS\IOAS\IOAS.DataModel\obj\Debug\IOAS.DataModel.csprojResolveAssemblyReference.cache
+E:\Logic Field\LF Visual Studio 2015 Projects\Projects\Development\IOAS\IOAS\IOAS.DataModel\obj\Debug\IOAS.DataModel.dll
+E:\Logic Field\LF Visual Studio 2015 Projects\Projects\Development\IOAS\IOAS\IOAS.DataModel\obj\Debug\IOAS.DataModel.pdb
+E:\Logic Field\LF Visual Studio 2015 Projects\Projects\Development\IOAS Public\IOAS.DataModel\bin\Debug\IOAS.DataModel.dll.config
+E:\Logic Field\LF Visual Studio 2015 Projects\Projects\Development\IOAS Public\IOAS.DataModel\bin\Debug\IOAS.DataModel.dll
+E:\Logic Field\LF Visual Studio 2015 Projects\Projects\Development\IOAS Public\IOAS.DataModel\bin\Debug\IOAS.DataModel.pdb
+E:\Logic Field\LF Visual Studio 2015 Projects\Projects\Development\IOAS Public\IOAS.DataModel\bin\Debug\EntityFramework.dll
+E:\Logic Field\LF Visual Studio 2015 Projects\Projects\Development\IOAS Public\IOAS.DataModel\bin\Debug\EntityFramework.SqlServer.dll
+E:\Logic Field\LF Visual Studio 2015 Projects\Projects\Development\IOAS Public\IOAS.DataModel\bin\Debug\EntityFramework.xml
+E:\Logic Field\LF Visual Studio 2015 Projects\Projects\Development\IOAS Public\IOAS.DataModel\bin\Debug\EntityFramework.SqlServer.xml
+E:\Logic Field\LF Visual Studio 2015 Projects\Projects\Development\IOAS Public\IOAS.DataModel\obj\Debug\IOAS.DataModel.csprojResolveAssemblyReference.cache
+E:\Logic Field\LF Visual Studio 2015 Projects\Projects\Development\IOAS Public\IOAS.DataModel\obj\Debug\IOAS.DataModel.dll
+E:\Logic Field\LF Visual Studio 2015 Projects\Projects\Development\IOAS Public\IOAS.DataModel\obj\Debug\IOAS.DataModel.pdb
+D:\IOAS Public\IOAS.DataModel\bin\Debug\IOAS.DataModel.dll.config
+D:\IOAS Public\IOAS.DataModel\bin\Debug\IOAS.DataModel.dll
+D:\IOAS Public\IOAS.DataModel\bin\Debug\IOAS.DataModel.pdb
+D:\IOAS Public\IOAS.DataModel\bin\Debug\EntityFramework.dll
+D:\IOAS Public\IOAS.DataModel\bin\Debug\EntityFramework.SqlServer.dll
+D:\IOAS Public\IOAS.DataModel\bin\Debug\EntityFramework.xml
+D:\IOAS Public\IOAS.DataModel\bin\Debug\EntityFramework.SqlServer.xml
+D:\IOAS Public\IOAS.DataModel\obj\Debug\IOAS.DataModel.csprojResolveAssemblyReference.cache
+D:\IOAS Public\IOAS.DataModel\obj\Debug\IOAS.DataModel.dll
+D:\IOAS Public\IOAS.DataModel\obj\Debug\IOAS.DataModel.pdb
+E:\IOAS Public\IOAS.DataModel\bin\Debug\IOAS.DataModel.dll.config
+E:\IOAS Public\IOAS.DataModel\bin\Debug\IOAS.DataModel.dll
+E:\IOAS Public\IOAS.DataModel\bin\Debug\IOAS.DataModel.pdb
+E:\IOAS Public\IOAS.DataModel\bin\Debug\EntityFramework.dll
+E:\IOAS Public\IOAS.DataModel\bin\Debug\EntityFramework.SqlServer.dll
+E:\IOAS Public\IOAS.DataModel\bin\Debug\EntityFramework.xml
+E:\IOAS Public\IOAS.DataModel\bin\Debug\EntityFramework.SqlServer.xml
+E:\IOAS Public\IOAS.DataModel\obj\Debug\IOAS.DataModel.csprojResolveAssemblyReference.cache
+E:\IOAS Public\IOAS.DataModel\obj\Debug\IOAS.DataModel.dll
+E:\IOAS Public\IOAS.DataModel\obj\Debug\IOAS.DataModel.pdb
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\IOAS.DataModel\bin\Debug\IOAS.DataModel.dll.config
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\IOAS.DataModel\bin\Debug\IOAS.DataModel.dll
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\IOAS.DataModel\bin\Debug\IOAS.DataModel.pdb
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\IOAS.DataModel\bin\Debug\EntityFramework.dll
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\IOAS.DataModel\bin\Debug\EntityFramework.SqlServer.dll
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\IOAS.DataModel\bin\Debug\EntityFramework.xml
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\IOAS.DataModel\bin\Debug\EntityFramework.SqlServer.xml
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\IOAS.DataModel\obj\Debug\IOAS.DataModel.csproj.CoreCompileInputs.cache
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\IOAS.DataModel\obj\Debug\IOAS.DataModel.dll
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\IOAS.DataModel\obj\Debug\IOAS.DataModel.pdb
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\IOAS.DataModel\obj\Debug\IOAS.DataModel.csprojResolveAssemblyReference.cache

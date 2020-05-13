@@ -1,0 +1,11 @@
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\IOAS.DataModel\bin\Release\IOAS.DataModel.dll.config
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\IOAS.DataModel\bin\Release\IOAS.DataModel.dll
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\IOAS.DataModel\bin\Release\IOAS.DataModel.pdb
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\IOAS.DataModel\bin\Release\EntityFramework.dll
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\IOAS.DataModel\bin\Release\EntityFramework.SqlServer.dll
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\IOAS.DataModel\bin\Release\EntityFramework.xml
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\IOAS.DataModel\bin\Release\EntityFramework.SqlServer.xml
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\IOAS.DataModel\obj\Release\IOAS.DataModel.csprojResolveAssemblyReference.cache
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\IOAS.DataModel\obj\Release\IOAS.DataModel.csproj.CoreCompileInputs.cache
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\IOAS.DataModel\obj\Release\IOAS.DataModel.dll
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\IOAS.DataModel\obj\Release\IOAS.DataModel.pdb

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9147baf35a1445caa880740fba1f06aa" Name="Diagram1">
+        <EntityTypeShape EntityType="PatentISModel.tbl_draft_AnnexB1" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PatentISModel.tbl_draft_AppAreas" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PatentISModel.tbl_draft_applicants" Width="1.5" PointX="2.75" PointY="3.75" />
+        <EntityTypeShape EntityType="PatentISModel.tbl_draft_comMode" Width="1.5" PointX="4.75" PointY="5.75" />
+        <EntityTypeShape EntityType="PatentISModel.tbl_files_PatentRequest" Width="1.5" PointX="8.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PatentISModel.tbl_mst_ListItem" Width="1.5" PointX="0.75" PointY="8.75" />
+        <EntityTypeShape EntityType="PatentISModel.tbl_trx_AnnexureB1" Width="1.5" PointX="2.75" PointY="8.75" />
+        <EntityTypeShape EntityType="PatentISModel.tbl_trx_ApplicationAreas" Width="1.5" PointX="4.75" PointY="8.75" />
+        <EntityTypeShape EntityType="PatentISModel.tblAnnexureB1" Width="1.5" PointX="10.75" PointY="9.75" />
+        <EntityTypeShape EntityType="PatentISModel.tblCommercialisationMode" Width="1.5" PointX="12.75" PointY="5.75" />
+        <EntityTypeShape EntityType="PatentISModel.tbl_Trademark" Width="1.5" PointX="13.375" PointY="8.75" />
+        <EntityTypeShape EntityType="PatentISModel.tbl_trx_Applicants" Width="1.5" PointX="9.375" PointY="3.75" />
+        <EntityTypeShape EntityType="PatentISModel.tbl_CR_Author" Width="1.5" PointX="13.375" PointY="0.75" />
+        <EntityTypeShape EntityType="PatentISModel.tbl_CR_Publish" Width="1.5" PointX="11.375" PointY="13.75" />
+        <EntityTypeShape EntityType="PatentISModel.tblCoInventor" Width="1.5" PointX="15.375" PointY="0.75" />
+        <EntityTypeShape EntityType="PatentISModel.tbl_Copyright" Width="1.5" PointX="0.75" PointY="15.75" />
+        <EntityTypeShape EntityType="PatentISModel.tbl_draft_IDFReq" Width="1.5" PointX="15.375" PointY="5.75" />
+        <EntityTypeShape EntityType="PatentISModel.tbl_draft_Coinventor" Width="1.5" PointX="5.375" PointY="0.75" />
+        <EntityTypeShape EntityType="PatentISModel.tbl_trx_CommercialisationMode" Width="1.5" PointX="13.375" PointY="14.75" />
+        <EntityTypeShape EntityType="PatentISModel.tbl_Trade_Applicantdetail" Width="1.5" PointX="7.375" PointY="13.75" />
+        <EntityTypeShape EntityType="PatentISModel.tblApplicants" Width="1.5" PointX="15.375" PointY="14.75" />
+        <EntityTypeShape EntityType="PatentISModel.tbl_mst_filepath" Width="1.5" PointX="17.375" PointY="0.75" />
+        <EntityTypeShape EntityType="PatentISModel.tbl_draft_Copyright" Width="1.5" PointX="3.375" PointY="12.75" />
+        <EntityTypeShape EntityType="PatentISModel.tbl_draft_CR_Author" Width="1.5" PointX="17.375" PointY="3.75" />
+        <EntityTypeShape EntityType="PatentISModel.tbl_draft_Trade_Applicantdetail" Width="1.5" PointX="3.375" PointY="17.75" />
+        <EntityTypeShape EntityType="PatentISModel.tbl_draft_Trademark" Width="1.5" PointX="5.375" PointY="17.75" />
+        <EntityTypeShape EntityType="PatentISModel.tbl_trx_Copyright" Width="1.5" PointX="17.375" PointY="7.75" />
+        <EntityTypeShape EntityType="PatentISModel.tbl_trx_CR_Author" Width="1.5" PointX="7.375" PointY="17.75" />
+        <EntityTypeShape EntityType="PatentISModel.tbl_trx_CR_Publish" Width="1.5" PointX="9.375" PointY="17.75" />
+        <EntityTypeShape EntityType="PatentISModel.tbl_trx_Trade_Applicantdetail" Width="1.5" PointX="11.375" PointY="18.75" />
+        <EntityTypeShape EntityType="PatentISModel.tbl_trx_Trademark" Width="1.5" PointX="19.375" PointY="0.75" />
+        <EntityTypeShape EntityType="PatentISModel.tbl_draft_CR_Publish" Width="1.5" PointX="19.375" PointY="13.75" />
+        <EntityTypeShape EntityType="PatentISModel.tblIDFRequest" Width="1.5" PointX="19.375" PointY="4.75" />
+        <EntityTypeShape EntityType="PatentISModel.tbl_trx_IDFRequest" Width="1.5" PointX="17.375" PointY="17.75" />
+        <EntityTypeShape EntityType="PatentISModel.tbl_trx_CoInventor" Width="1.5" PointX="7.375" PointY="8.75" />
+        <EntityTypeShape EntityType="PatentISModel.tblApplicationAreas" Width="1.5" PointX="0.75" PointY="12.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PatentNewModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbl_mst_filepath">
+    <Key>
+      <PropertyRef Name="trx_id" />
+    </Key>
+    <Property Name="trx_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Category" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FilePath" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblFileCreation">
+    <Key>
+      <PropertyRef Name="tranx_id" />
+    </Key>
+    <Property Name="tranx_id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FileNo" Type="bigint" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="InitialFiling" Type="varchar" MaxLength="50" />
+    <Property Name="Type" Type="varchar" MaxLength="50" />
+    <Property Name="Commercial" Type="varchar" MaxLength="15" />
+    <Property Name="Assign_fileno" Type="varchar" MaxLength="50" />
+    <Property Name="FirstApplicant" Type="varchar" MaxLength="50" />
+    <Property Name="SecondApplicant" Type="varchar" MaxLength="50" />
+    <Property Name="InstID" Type="varchar" MaxLength="15" />
+    <Property Name="InventorType" Type="varchar" MaxLength="20" />
+    <Property Name="Inventor1" Type="varchar" MaxLength="70" />
+    <Property Name="DeptCode" Type="varchar" MaxLength="3" />
+    <Property Name="Department" Type="varchar" MaxLength="150" />
+    <Property Name="Request_Dt" Type="smalldatetime" />
+    <Property Name="Specification" Type="nvarchar(max)" />
+    <Property Name="InventionSourceFromProject" Type="bit" />
+    <Property Name="Comments" Type="varchar" MaxLength="250" />
+    <Property Name="InventionNo" Type="varchar" MaxLength="30" />
+    <Property Name="Applcn_no" Type="varchar" MaxLength="100" />
+    <Property Name="Filing_dt" Type="smalldatetime" />
+    <Property Name="CompleteDt" Type="smalldatetime" />
+    <Property Name="PatentSearch" Type="varchar" MaxLength="30" />
+    <Property Name="Patent_searchDt" Type="smalldatetime" />
+    <Property Name="Examination" Type="varchar" MaxLength="3" />
+    <Property Name="Exam_dt" Type="smalldatetime" />
+    <Property Name="Publication" Type="varchar" MaxLength="10" />
+    <Property Name="Pub_Dt" Type="smalldatetime" />
+    <Property Name="Pat_no" Type="varchar" MaxLength="15" />
+    <Property Name="Pat_dt" Type="smalldatetime" />
+    <Property Name="Validity_from_dt" Type="smalldatetime" />
+    <Property Name="Validity_to_dt" Type="smalldatetime" />
+    <Property Name="PCT" Type="varchar" MaxLength="10" />
+    <Property Name="Status" Type="varchar" MaxLength="250" />
+    <Property Name="Sub_Status" Type="varchar" MaxLength="50" />
+    <Property Name="Attorney" Type="varchar" MaxLength="100" />
+    <Property Name="Industry1" Type="varchar" MaxLength="150" />
+    <Property Name="Industry2" Type="varchar" MaxLength="150" />
+    <Property Name="Industry3" Type="nvarchar" MaxLength="150" />
+    <Property Name="IPC_Code" Type="varchar" MaxLength="150" />
+    <Property Name="Abstract" Type="varchar" MaxLength="50" />
+    <Property Name="DevelopmentStatus" Type="varchar" MaxLength="150" />
+    <Property Name="Commercialized" Type="varchar" MaxLength="20" />
+    <Property Name="PatentLicense" Type="varchar" MaxLength="50" />
+    <Property Name="TechTransNo" Type="varchar" MaxLength="20" />
+    <Property Name="Remarks" Type="varchar" MaxLength="250" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" />
+    <Property Name="Direct_Strategy" Type="varchar" MaxLength="5" />
+    <Property Name="Appln_Post" Type="nvarchar" MaxLength="5" />
+    <Property Name="Post_Dated" Type="smalldatetime" />
+    <Property Name="Abstract_TT" Type="nvarchar(max)" />
+    <Property Name="Design" Type="nvarchar" MaxLength="150" />
+    <Property Name="OtherIP" Type="nvarchar" MaxLength="150" />
+    <Property Name="Solution_Packages" Type="nvarchar" MaxLength="150" />
+    <Property Name="Software" Type="nvarchar(max)" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedOn" Type="date" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModifiedOn" Type="date" />
+  </EntityType>
+  <EntityContainer Name="PatentNewModelStoreContainer">
+    <EntitySet Name="tbl_mst_filepath" EntityType="Self.tbl_mst_filepath" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblFileCreation" EntityType="Self.tblFileCreation" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

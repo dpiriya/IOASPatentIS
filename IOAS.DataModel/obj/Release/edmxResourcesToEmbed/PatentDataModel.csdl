@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PatentNewModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="PatentNewEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblFileCreation" EntityType="PatentNewModel.tblFileCreation" />
+    <EntitySet Name="tbl_mst_filepath" EntityType="PatentNewModel.tbl_mst_filepath" />
+  </EntityContainer>
+  <EntityType Name="tblFileCreation">
+    <Key>
+      <PropertyRef Name="tranx_id" />
+    </Key>
+    <Property Name="tranx_id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FileNo" Type="Int64" Nullable="false" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="InitialFiling" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Commercial" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Assign_fileno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FirstApplicant" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SecondApplicant" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="InstID" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="InventorType" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Inventor1" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="DeptCode" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="Department" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Request_Dt" Type="DateTime" Precision="0" />
+    <Property Name="Specification" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="InventionSourceFromProject" Type="Boolean" />
+    <Property Name="Comments" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="InventionNo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Applcn_no" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Filing_dt" Type="DateTime" Precision="0" />
+    <Property Name="CompleteDt" Type="DateTime" Precision="0" />
+    <Property Name="PatentSearch" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Patent_searchDt" Type="DateTime" Precision="0" />
+    <Property Name="Examination" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="Exam_dt" Type="DateTime" Precision="0" />
+    <Property Name="Publication" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Pub_Dt" Type="DateTime" Precision="0" />
+    <Property Name="Pat_no" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Pat_dt" Type="DateTime" Precision="0" />
+    <Property Name="Validity_from_dt" Type="DateTime" Precision="0" />
+    <Property Name="Validity_to_dt" Type="DateTime" Precision="0" />
+    <Property Name="PCT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Sub_Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Attorney" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Industry1" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Industry2" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Industry3" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="IPC_Code" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Abstract" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DevelopmentStatus" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Commercialized" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PatentLicense" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TechTransNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Remarks" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Direct_Strategy" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="Appln_Post" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="Post_Dated" Type="DateTime" Precision="0" />
+    <Property Name="Abstract_TT" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Design" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="OtherIP" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Solution_Packages" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Software" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="0" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="tbl_mst_filepath">
+    <Key>
+      <PropertyRef Name="trx_id" />
+    </Key>
+    <Property Name="trx_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Category" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FilePath" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,6 @@
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\DataAccessLayer\bin\Release\DynamicReports.dll
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\DataAccessLayer\bin\Release\DynamicReports.pdb
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\DataAccessLayer\obj\Release\DataAccessLayer.csprojResolveAssemblyReference.cache
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\DataAccessLayer\obj\Release\DataAccessLayer.csproj.CoreCompileInputs.cache
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\DataAccessLayer\obj\Release\DynamicReports.dll
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\DataAccessLayer\obj\Release\DynamicReports.pdb

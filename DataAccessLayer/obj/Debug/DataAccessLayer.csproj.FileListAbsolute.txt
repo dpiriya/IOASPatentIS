@@ -1,0 +1,31 @@
+E:\Logic Field\LF Visual Studio 2015 Projects\Projects\Development\IOAS\IOAS\DataAccessLayer\bin\Debug\DynamicReports.dll
+E:\Logic Field\LF Visual Studio 2015 Projects\Projects\Development\IOAS\IOAS\DataAccessLayer\bin\Debug\DynamicReports.pdb
+E:\Logic Field\LF Visual Studio 2015 Projects\Projects\Development\IOAS\IOAS\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+E:\Logic Field\LF Visual Studio 2015 Projects\Projects\Development\IOAS\IOAS\DataAccessLayer\obj\Debug\DynamicReports.dll
+E:\Logic Field\LF Visual Studio 2015 Projects\Projects\Development\IOAS\IOAS\DataAccessLayer\obj\Debug\DynamicReports.pdb
+E:\Logic Field\LF Visual Studio 2015 Projects\Projects\Development\IOAS Public\DataAccessLayer\bin\Debug\DynamicReports.dll
+E:\Logic Field\LF Visual Studio 2015 Projects\Projects\Development\IOAS Public\DataAccessLayer\bin\Debug\DynamicReports.pdb
+E:\Logic Field\LF Visual Studio 2015 Projects\Projects\Development\IOAS Public\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+E:\Logic Field\LF Visual Studio 2015 Projects\Projects\Development\IOAS Public\DataAccessLayer\obj\Debug\DynamicReports.dll
+E:\Logic Field\LF Visual Studio 2015 Projects\Projects\Development\IOAS Public\DataAccessLayer\obj\Debug\DynamicReports.pdb
+D:\IOAS Public\DataAccessLayer\bin\Debug\DynamicReports.dll
+D:\IOAS Public\DataAccessLayer\bin\Debug\DynamicReports.pdb
+D:\IOAS Public\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+D:\IOAS Public\DataAccessLayer\obj\Debug\DynamicReports.dll
+D:\IOAS Public\DataAccessLayer\obj\Debug\DynamicReports.pdb
+E:\IOAS Public\DataAccessLayer\bin\Debug\DynamicReports.dll
+E:\IOAS Public\DataAccessLayer\bin\Debug\DynamicReports.pdb
+E:\IOAS Public\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+E:\IOAS Public\DataAccessLayer\obj\Debug\DynamicReports.dll
+E:\IOAS Public\DataAccessLayer\obj\Debug\DynamicReports.pdb
+E:\ioas code\IOAS Public - Invoice Code\IOAS Public\DataAccessLayer\bin\Debug\DynamicReports.dll
+E:\ioas code\IOAS Public - Invoice Code\IOAS Public\DataAccessLayer\bin\Debug\DynamicReports.pdb
+E:\ioas code\IOAS Public - Invoice Code\IOAS Public\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+E:\ioas code\IOAS Public - Invoice Code\IOAS Public\DataAccessLayer\obj\Debug\DynamicReports.dll
+E:\ioas code\IOAS Public - Invoice Code\IOAS Public\DataAccessLayer\obj\Debug\DynamicReports.pdb
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\DataAccessLayer\bin\Debug\DynamicReports.dll
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\DataAccessLayer\bin\Debug\DynamicReports.pdb
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\DataAccessLayer\obj\Debug\DynamicReports.dll
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\DataAccessLayer\obj\Debug\DynamicReports.pdb
+E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache

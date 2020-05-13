@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PatentNewModelStoreContainer" CdmEntityContainer="PatentNewEntities">
+    <EntitySetMapping Name="tblFileCreation">
+      <EntityTypeMapping TypeName="PatentNewModel.tblFileCreation">
+        <MappingFragment StoreEntitySet="tblFileCreation">
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Software" ColumnName="Software" />
+          <ScalarProperty Name="Solution_Packages" ColumnName="Solution_Packages" />
+          <ScalarProperty Name="OtherIP" ColumnName="OtherIP" />
+          <ScalarProperty Name="Design" ColumnName="Design" />
+          <ScalarProperty Name="Abstract_TT" ColumnName="Abstract_TT" />
+          <ScalarProperty Name="Post_Dated" ColumnName="Post_Dated" />
+          <ScalarProperty Name="Appln_Post" ColumnName="Appln_Post" />
+          <ScalarProperty Name="Direct_Strategy" ColumnName="Direct_Strategy" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="TechTransNo" ColumnName="TechTransNo" />
+          <ScalarProperty Name="PatentLicense" ColumnName="PatentLicense" />
+          <ScalarProperty Name="Commercialized" ColumnName="Commercialized" />
+          <ScalarProperty Name="DevelopmentStatus" ColumnName="DevelopmentStatus" />
+          <ScalarProperty Name="Abstract" ColumnName="Abstract" />
+          <ScalarProperty Name="IPC_Code" ColumnName="IPC_Code" />
+          <ScalarProperty Name="Industry3" ColumnName="Industry3" />
+          <ScalarProperty Name="Industry2" ColumnName="Industry2" />
+          <ScalarProperty Name="Industry1" ColumnName="Industry1" />
+          <ScalarProperty Name="Attorney" ColumnName="Attorney" />
+          <ScalarProperty Name="Sub_Status" ColumnName="Sub_Status" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="PCT" ColumnName="PCT" />
+          <ScalarProperty Name="Validity_to_dt" ColumnName="Validity_to_dt" />
+          <ScalarProperty Name="Validity_from_dt" ColumnName="Validity_from_dt" />
+          <ScalarProperty Name="Pat_dt" ColumnName="Pat_dt" />
+          <ScalarProperty Name="Pat_no" ColumnName="Pat_no" />
+          <ScalarProperty Name="Pub_Dt" ColumnName="Pub_Dt" />
+          <ScalarProperty Name="Publication" ColumnName="Publication" />
+          <ScalarProperty Name="Exam_dt" ColumnName="Exam_dt" />
+          <ScalarProperty Name="Examination" ColumnName="Examination" />
+          <ScalarProperty Name="Patent_searchDt" ColumnName="Patent_searchDt" />
+          <ScalarProperty Name="PatentSearch" ColumnName="PatentSearch" />
+          <ScalarProperty Name="CompleteDt" ColumnName="CompleteDt" />
+          <ScalarProperty Name="Filing_dt" ColumnName="Filing_dt" />
+          <ScalarProperty Name="Applcn_no" ColumnName="Applcn_no" />
+          <ScalarProperty Name="InventionNo" ColumnName="InventionNo" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="InventionSourceFromProject" ColumnName="InventionSourceFromProject" />
+          <ScalarProperty Name="Specification" ColumnName="Specification" />
+          <ScalarProperty Name="Request_Dt" ColumnName="Request_Dt" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="DeptCode" ColumnName="DeptCode" />
+          <ScalarProperty Name="Inventor1" ColumnName="Inventor1" />
+          <ScalarProperty Name="InventorType" ColumnName="InventorType" />
+          <ScalarProperty Name="InstID" ColumnName="InstID" />
+          <ScalarProperty Name="SecondApplicant" ColumnName="SecondApplicant" />
+          <ScalarProperty Name="FirstApplicant" ColumnName="FirstApplicant" />
+          <ScalarProperty Name="Assign_fileno" ColumnName="Assign_fileno" />
+          <ScalarProperty Name="Commercial" ColumnName="Commercial" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="InitialFiling" ColumnName="InitialFiling" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="FileNo" ColumnName="FileNo" />
+          <ScalarProperty Name="tranx_id" ColumnName="tranx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_mst_filepath">
+      <EntityTypeMapping TypeName="PatentNewModel.tbl_mst_filepath">
+        <MappingFragment StoreEntitySet="tbl_mst_filepath">
+          <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="trx_id" ColumnName="trx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

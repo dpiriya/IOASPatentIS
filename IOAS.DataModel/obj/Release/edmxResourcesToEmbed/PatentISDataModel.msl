@@ -1,0 +1,645 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PatentISModelStoreContainer" CdmEntityContainer="PatentISEntities">
+    <EntitySetMapping Name="tbl_draft_AnnexB1">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_draft_AnnexB1">
+        <MappingFragment StoreEntitySet="tbl_draft_AnnexB1">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Outcome" ColumnName="Outcome" />
+          <ScalarProperty Name="Party" ColumnName="Party" />
+          <ScalarProperty Name="Tool" ColumnName="Tool" />
+          <ScalarProperty Name="L1Search" ColumnName="L1Search" />
+          <ScalarProperty Name="OtherInfo" ColumnName="OtherInfo" />
+          <ScalarProperty Name="DevelopmentStage" ColumnName="DevelopmentStage" />
+          <ScalarProperty Name="BriefDescription" ColumnName="BriefDescription" />
+          <ScalarProperty Name="DraftNo" ColumnName="DraftNo" />
+          <ScalarProperty Name="tranx_id" ColumnName="tranx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_draft_AppAreas">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_draft_AppAreas">
+        <MappingFragment StoreEntitySet="tbl_draft_AppAreas">
+          <ScalarProperty Name="Areas" ColumnName="Areas" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="DraftNo" ColumnName="DraftNo" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="tranx_id" ColumnName="tranx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_draft_applicants">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_draft_applicants">
+        <MappingFragment StoreEntitySet="tbl_draft_applicants">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="Organisation" ColumnName="Organisation" />
+          <ScalarProperty Name="DraftNo" ColumnName="DraftNo" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="tranx_id" ColumnName="tranx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_draft_comMode">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_draft_comMode">
+        <MappingFragment StoreEntitySet="tbl_draft_comMode">
+          <ScalarProperty Name="Mode" ColumnName="Mode" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="IndNo" ColumnName="IndNo" />
+          <ScalarProperty Name="DraftNo" ColumnName="DraftNo" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="tranx_id" ColumnName="tranx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_files_PatentRequest">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_files_PatentRequest">
+        <MappingFragment StoreEntitySet="tbl_files_PatentRequest">
+          <ScalarProperty Name="DocName" ColumnName="DocName" />
+          <ScalarProperty Name="DocPath" ColumnName="DocPath" />
+          <ScalarProperty Name="DocId" ColumnName="DocId" />
+          <ScalarProperty Name="FileNo" ColumnName="FileNo" />
+          <ScalarProperty Name="tranx_id" ColumnName="tranx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_mst_ListItem">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_mst_ListItem">
+        <MappingFragment StoreEntitySet="tbl_mst_ListItem">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Grouping" ColumnName="Grouping" />
+          <ScalarProperty Name="ItemValue" ColumnName="ItemValue" />
+          <ScalarProperty Name="ItemText" ColumnName="ItemText" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="tranx_id" ColumnName="tranx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_trx_AnnexureB1">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_trx_AnnexureB1">
+        <MappingFragment StoreEntitySet="tbl_trx_AnnexureB1">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Outcome" ColumnName="Outcome" />
+          <ScalarProperty Name="Party" ColumnName="Party" />
+          <ScalarProperty Name="Tool" ColumnName="Tool" />
+          <ScalarProperty Name="L1Search" ColumnName="L1Search" />
+          <ScalarProperty Name="OtherInfo" ColumnName="OtherInfo" />
+          <ScalarProperty Name="DevelopmentStage" ColumnName="DevelopmentStage" />
+          <ScalarProperty Name="BriefDescription" ColumnName="BriefDescription" />
+          <ScalarProperty Name="FileNo" ColumnName="FileNo" />
+          <ScalarProperty Name="VersionId" ColumnName="VersionId" />
+          <ScalarProperty Name="tranx_id" ColumnName="tranx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_trx_ApplicationAreas">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_trx_ApplicationAreas">
+        <MappingFragment StoreEntitySet="tbl_trx_ApplicationAreas">
+          <ScalarProperty Name="Areas" ColumnName="Areas" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="FileNo" ColumnName="FileNo" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="VersionId" ColumnName="VersionId" />
+          <ScalarProperty Name="tranx_id" ColumnName="tranx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAnnexureB1">
+      <EntityTypeMapping TypeName="PatentISModel.tblAnnexureB1">
+        <MappingFragment StoreEntitySet="tblAnnexureB1">
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Outcome" ColumnName="Outcome" />
+          <ScalarProperty Name="Party" ColumnName="Party" />
+          <ScalarProperty Name="Tool" ColumnName="Tool" />
+          <ScalarProperty Name="L1Search" ColumnName="L1Search" />
+          <ScalarProperty Name="OtherInfo" ColumnName="OtherInfo" />
+          <ScalarProperty Name="DevelopmentStage" ColumnName="DevelopmentStage" />
+          <ScalarProperty Name="BriefDescription" ColumnName="BriefDescription" />
+          <ScalarProperty Name="FileNo" ColumnName="FileNo" />
+          <ScalarProperty Name="tranx_id" ColumnName="tranx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCommercialisationMode">
+      <EntityTypeMapping TypeName="PatentISModel.tblCommercialisationMode">
+        <MappingFragment StoreEntitySet="tblCommercialisationMode">
+          <ScalarProperty Name="Mode" ColumnName="Mode" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="IndNo" ColumnName="IndNo" />
+          <ScalarProperty Name="FileNo" ColumnName="FileNo" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="tranx_id" ColumnName="tranx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Trademark">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_Trademark">
+        <MappingFragment StoreEntitySet="tbl_Trademark">
+          <ScalarProperty Name="TMStatement" ColumnName="TMStatement" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
+          <ScalarProperty Name="TMImage" ColumnName="TMImage" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="TMName" ColumnName="TMName" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="FileNo" ColumnName="FileNo" />
+          <ScalarProperty Name="trx_id" ColumnName="trx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_trx_Applicants">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_trx_Applicants">
+        <MappingFragment StoreEntitySet="tbl_trx_Applicants">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="Organisation" ColumnName="Organisation" />
+          <ScalarProperty Name="FileNo" ColumnName="FileNo" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="VersionId" ColumnName="VersionId" />
+          <ScalarProperty Name="tranx_id" ColumnName="tranx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_CR_Author">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_CR_Author">
+        <MappingFragment StoreEntitySet="tbl_CR_Author">
+          <ScalarProperty Name="createdBy" ColumnName="createdBy" />
+          <ScalarProperty Name="createdOn" ColumnName="createdOn" />
+          <ScalarProperty Name="deceasedDt" ColumnName="deceasedDt" />
+          <ScalarProperty Name="isDeceased" ColumnName="isDeceased" />
+          <ScalarProperty Name="AUNationality" ColumnName="AUNationality" />
+          <ScalarProperty Name="AUAddress" ColumnName="AUAddress" />
+          <ScalarProperty Name="AUName" ColumnName="AUName" />
+          <ScalarProperty Name="SNo" ColumnName="SNo" />
+          <ScalarProperty Name="FileNo" ColumnName="FileNo" />
+          <ScalarProperty Name="trx_id" ColumnName="trx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_CR_Publish">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_CR_Publish">
+        <MappingFragment StoreEntitySet="tbl_CR_Publish">
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="PUNationality" ColumnName="PUNationality" />
+          <ScalarProperty Name="PUAddress" ColumnName="PUAddress" />
+          <ScalarProperty Name="PUName" ColumnName="PUName" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="FileNo" ColumnName="FileNo" />
+          <ScalarProperty Name="trx_id" ColumnName="trx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCoInventor">
+      <EntityTypeMapping TypeName="PatentISModel.tblCoInventor">
+        <MappingFragment StoreEntitySet="tblCoInventor">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="InstId" ColumnName="InstId" />
+          <ScalarProperty Name="Dept" ColumnName="Dept" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="FileNo" ColumnName="FileNo" />
+          <ScalarProperty Name="SNo" ColumnName="SNo" />
+          <ScalarProperty Name="tranx_id" ColumnName="tranx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Copyright">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_Copyright">
+        <MappingFragment StoreEntitySet="tbl_Copyright">
+          <ScalarProperty Name="Original" ColumnName="Original" />
+          <ScalarProperty Name="isRegistered" ColumnName="isRegistered" />
+          <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="isPublished" ColumnName="isPublished" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ClassofWork" ColumnName="ClassofWork" />
+          <ScalarProperty Name="Nature" ColumnName="Nature" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="FileNo" ColumnName="FileNo" />
+          <ScalarProperty Name="trx_id" ColumnName="trx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_draft_IDFReq">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_draft_IDFReq">
+        <MappingFragment StoreEntitySet="tbl_draft_IDFReq">
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="RequestedAction" ColumnName="RequestedAction" />
+          <ScalarProperty Name="RelevantInformation" ColumnName="RelevantInformation" />
+          <ScalarProperty Name="DetailsOfBiologicalMaterial" ColumnName="DetailsOfBiologicalMaterial" />
+          <ScalarProperty Name="BiologicalMaterial" ColumnName="BiologicalMaterial" />
+          <ScalarProperty Name="Disclosure" ColumnName="Disclosure" />
+          <ScalarProperty Name="SourceOfInvention" ColumnName="SourceOfInvention" />
+          <ScalarProperty Name="SupportInformation" ColumnName="SupportInformation" />
+          <ScalarProperty Name="PriorPublication" ColumnName="PriorPublication" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Summary" ColumnName="Summary" />
+          <ScalarProperty Name="FieldOfInvention" ColumnName="FieldOfInvention" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="FirstApplicantContactNo" ColumnName="FirstApplicantContactNo" />
+          <ScalarProperty Name="FirstApplicantEmailId" ColumnName="FirstApplicantEmailId" />
+          <ScalarProperty Name="FirstApplicantAddress" ColumnName="FirstApplicantAddress" />
+          <ScalarProperty Name="FirstApplicantPosition" ColumnName="FirstApplicantPosition" />
+          <ScalarProperty Name="FirstApplicantOrganisation" ColumnName="FirstApplicantOrganisation" />
+          <ScalarProperty Name="FirstApplicantName" ColumnName="FirstApplicantName" />
+          <ScalarProperty Name="InstId" ColumnName="InstId" />
+          <ScalarProperty Name="PIContactNo" ColumnName="PIContactNo" />
+          <ScalarProperty Name="PIEmailId" ColumnName="PIEmailId" />
+          <ScalarProperty Name="PIDepartment" ColumnName="PIDepartment" />
+          <ScalarProperty Name="PrimaryInventorName" ColumnName="PrimaryInventorName" />
+          <ScalarProperty Name="PrimaryInventorType" ColumnName="PrimaryInventorType" />
+          <ScalarProperty Name="IDFType" ColumnName="IDFType" />
+          <ScalarProperty Name="DraftNo" ColumnName="DraftNo" />
+          <ScalarProperty Name="tranx_id" ColumnName="tranx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_draft_Coinventor">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_draft_Coinventor">
+        <MappingFragment StoreEntitySet="tbl_draft_Coinventor">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="InstId" ColumnName="InstId" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="Dept" ColumnName="Dept" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="DraftNo" ColumnName="DraftNo" />
+          <ScalarProperty Name="SNo" ColumnName="SNo" />
+          <ScalarProperty Name="tranx_id" ColumnName="tranx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_trx_CommercialisationMode">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_trx_CommercialisationMode">
+        <MappingFragment StoreEntitySet="tbl_trx_CommercialisationMode">
+          <ScalarProperty Name="Mode" ColumnName="Mode" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="IndNo" ColumnName="IndNo" />
+          <ScalarProperty Name="FileNo" ColumnName="FileNo" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="VersionId" ColumnName="VersionId" />
+          <ScalarProperty Name="tranx_id" ColumnName="tranx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Trade_Applicantdetail">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_Trade_Applicantdetail">
+        <MappingFragment StoreEntitySet="tbl_Trade_Applicantdetail">
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="LegalStatus" ColumnName="LegalStatus" />
+          <ScalarProperty Name="Nature" ColumnName="Nature" />
+          <ScalarProperty Name="AddressOfService" ColumnName="AddressOfService" />
+          <ScalarProperty Name="Jurisdiction" ColumnName="Jurisdiction" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Organisation" ColumnName="Organisation" />
+          <ScalarProperty Name="FileNo" ColumnName="FileNo" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="tranx_id" ColumnName="tranx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblApplicants">
+      <EntityTypeMapping TypeName="PatentISModel.tblApplicants">
+        <MappingFragment StoreEntitySet="tblApplicants">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="Organisation" ColumnName="Organisation" />
+          <ScalarProperty Name="FileNo" ColumnName="FileNo" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="tranx_id" ColumnName="tranx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_mst_filepath">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_mst_filepath">
+        <MappingFragment StoreEntitySet="tbl_mst_filepath">
+          <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="trx_id" ColumnName="trx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_draft_Copyright">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_draft_Copyright">
+        <MappingFragment StoreEntitySet="tbl_draft_Copyright">
+          <ScalarProperty Name="Original" ColumnName="Original" />
+          <ScalarProperty Name="isRegistered" ColumnName="isRegistered" />
+          <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="isPublished" ColumnName="isPublished" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ClassofWork" ColumnName="ClassofWork" />
+          <ScalarProperty Name="Nature" ColumnName="Nature" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="DraftNo" ColumnName="DraftNo" />
+          <ScalarProperty Name="trx_id" ColumnName="trx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_draft_CR_Author">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_draft_CR_Author">
+        <MappingFragment StoreEntitySet="tbl_draft_CR_Author">
+          <ScalarProperty Name="createdBy" ColumnName="createdBy" />
+          <ScalarProperty Name="createdOn" ColumnName="createdOn" />
+          <ScalarProperty Name="deceasedDt" ColumnName="deceasedDt" />
+          <ScalarProperty Name="isDeceased" ColumnName="isDeceased" />
+          <ScalarProperty Name="AUNationality" ColumnName="AUNationality" />
+          <ScalarProperty Name="AUAddress" ColumnName="AUAddress" />
+          <ScalarProperty Name="AUName" ColumnName="AUName" />
+          <ScalarProperty Name="SNo" ColumnName="SNo" />
+          <ScalarProperty Name="DraftNo" ColumnName="DraftNo" />
+          <ScalarProperty Name="trx_id" ColumnName="trx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_draft_Trade_Applicantdetail">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_draft_Trade_Applicantdetail">
+        <MappingFragment StoreEntitySet="tbl_draft_Trade_Applicantdetail">
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="LegalStatus" ColumnName="LegalStatus" />
+          <ScalarProperty Name="Nature" ColumnName="Nature" />
+          <ScalarProperty Name="AddressOfService" ColumnName="AddressOfService" />
+          <ScalarProperty Name="Jurisdiction" ColumnName="Jurisdiction" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Organisation" ColumnName="Organisation" />
+          <ScalarProperty Name="DraftNo" ColumnName="DraftNo" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="tranx_id" ColumnName="tranx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_draft_Trademark">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_draft_Trademark">
+        <MappingFragment StoreEntitySet="tbl_draft_Trademark">
+          <ScalarProperty Name="TMStatement" ColumnName="TMStatement" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
+          <ScalarProperty Name="TMImage" ColumnName="TMImage" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="TMName" ColumnName="TMName" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="DraftNo" ColumnName="DraftNo" />
+          <ScalarProperty Name="trx_id" ColumnName="trx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_trx_Copyright">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_trx_Copyright">
+        <MappingFragment StoreEntitySet="tbl_trx_Copyright">
+          <ScalarProperty Name="Original" ColumnName="Original" />
+          <ScalarProperty Name="isRegistered" ColumnName="isRegistered" />
+          <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="isPublished" ColumnName="isPublished" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ClassofWork" ColumnName="ClassofWork" />
+          <ScalarProperty Name="Nature" ColumnName="Nature" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="FileNo" ColumnName="FileNo" />
+          <ScalarProperty Name="VersionId" ColumnName="VersionId" />
+          <ScalarProperty Name="trx_id" ColumnName="trx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_trx_CR_Author">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_trx_CR_Author">
+        <MappingFragment StoreEntitySet="tbl_trx_CR_Author">
+          <ScalarProperty Name="createdBy" ColumnName="createdBy" />
+          <ScalarProperty Name="createdOn" ColumnName="createdOn" />
+          <ScalarProperty Name="deceasedDt" ColumnName="deceasedDt" />
+          <ScalarProperty Name="isDeceased" ColumnName="isDeceased" />
+          <ScalarProperty Name="AUNationality" ColumnName="AUNationality" />
+          <ScalarProperty Name="AUAddress" ColumnName="AUAddress" />
+          <ScalarProperty Name="AUName" ColumnName="AUName" />
+          <ScalarProperty Name="SNo" ColumnName="SNo" />
+          <ScalarProperty Name="FileNo" ColumnName="FileNo" />
+          <ScalarProperty Name="VersionId" ColumnName="VersionId" />
+          <ScalarProperty Name="trx_id" ColumnName="trx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_trx_CR_Publish">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_trx_CR_Publish">
+        <MappingFragment StoreEntitySet="tbl_trx_CR_Publish">
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="PUNationality" ColumnName="PUNationality" />
+          <ScalarProperty Name="PUAddress" ColumnName="PUAddress" />
+          <ScalarProperty Name="PUName" ColumnName="PUName" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="FileNo" ColumnName="FileNo" />
+          <ScalarProperty Name="VersionId" ColumnName="VersionId" />
+          <ScalarProperty Name="trx_id" ColumnName="trx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_trx_Trade_Applicantdetail">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_trx_Trade_Applicantdetail">
+        <MappingFragment StoreEntitySet="tbl_trx_Trade_Applicantdetail">
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="LegalStatus" ColumnName="LegalStatus" />
+          <ScalarProperty Name="Nature" ColumnName="Nature" />
+          <ScalarProperty Name="AddressOfService" ColumnName="AddressOfService" />
+          <ScalarProperty Name="Jurisdiction" ColumnName="Jurisdiction" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Organisation" ColumnName="Organisation" />
+          <ScalarProperty Name="FileNo" ColumnName="FileNo" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="VersionId" ColumnName="VersionId" />
+          <ScalarProperty Name="tranx_id" ColumnName="tranx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_trx_Trademark">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_trx_Trademark">
+        <MappingFragment StoreEntitySet="tbl_trx_Trademark">
+          <ScalarProperty Name="TMStatement" ColumnName="TMStatement" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
+          <ScalarProperty Name="TMImage" ColumnName="TMImage" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="TMName" ColumnName="TMName" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="FileNo" ColumnName="FileNo" />
+          <ScalarProperty Name="VersionId" ColumnName="VersionId" />
+          <ScalarProperty Name="trx_id" ColumnName="trx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_draft_CR_Publish">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_draft_CR_Publish">
+        <MappingFragment StoreEntitySet="tbl_draft_CR_Publish">
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="PUNationality" ColumnName="PUNationality" />
+          <ScalarProperty Name="PUAddress" ColumnName="PUAddress" />
+          <ScalarProperty Name="PUName" ColumnName="PUName" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="DraftNo" ColumnName="DraftNo" />
+          <ScalarProperty Name="trx_id" ColumnName="trx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblIDFRequest">
+      <EntityTypeMapping TypeName="PatentISModel.tblIDFRequest">
+        <MappingFragment StoreEntitySet="tblIDFRequest">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="RequestedActionOthers" ColumnName="RequestedActionOthers" />
+          <ScalarProperty Name="RequestedAction" ColumnName="RequestedAction" />
+          <ScalarProperty Name="RelevantInformation" ColumnName="RelevantInformation" />
+          <ScalarProperty Name="DetailsOfBiologicalMaterial" ColumnName="DetailsOfBiologicalMaterial" />
+          <ScalarProperty Name="BiologicalMaterial" ColumnName="BiologicalMaterial" />
+          <ScalarProperty Name="Disclosure" ColumnName="Disclosure" />
+          <ScalarProperty Name="SourceOfInvention" ColumnName="SourceOfInvention" />
+          <ScalarProperty Name="SupportInformation" ColumnName="SupportInformation" />
+          <ScalarProperty Name="PriorPublication" ColumnName="PriorPublication" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Summary" ColumnName="Summary" />
+          <ScalarProperty Name="FieldOfInvention" ColumnName="FieldOfInvention" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="FirstApplicantContactNo" ColumnName="FirstApplicantContactNo" />
+          <ScalarProperty Name="FirstApplicantEmailId" ColumnName="FirstApplicantEmailId" />
+          <ScalarProperty Name="FirstApplicantAddress" ColumnName="FirstApplicantAddress" />
+          <ScalarProperty Name="FirstApplicantPosition" ColumnName="FirstApplicantPosition" />
+          <ScalarProperty Name="FirstApplicantOrganisation" ColumnName="FirstApplicantOrganisation" />
+          <ScalarProperty Name="FirstApplicantName" ColumnName="FirstApplicantName" />
+          <ScalarProperty Name="PIInstId" ColumnName="PIInstId" />
+          <ScalarProperty Name="PIContactNo" ColumnName="PIContactNo" />
+          <ScalarProperty Name="PIEmailId" ColumnName="PIEmailId" />
+          <ScalarProperty Name="PIDepartment" ColumnName="PIDepartment" />
+          <ScalarProperty Name="PrimaryInventorName" ColumnName="PrimaryInventorName" />
+          <ScalarProperty Name="PrimaryInventorType" ColumnName="PrimaryInventorType" />
+          <ScalarProperty Name="IDFType" ColumnName="IDFType" />
+          <ScalarProperty Name="FileNo" ColumnName="FileNo" />
+          <ScalarProperty Name="tranx_id" ColumnName="tranx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_trx_IDFRequest">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_trx_IDFRequest">
+        <MappingFragment StoreEntitySet="tbl_trx_IDFRequest">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="RequestedActionOthers" ColumnName="RequestedActionOthers" />
+          <ScalarProperty Name="RequestedAction" ColumnName="RequestedAction" />
+          <ScalarProperty Name="RelevantInformation" ColumnName="RelevantInformation" />
+          <ScalarProperty Name="DetailsOfBiologicalMaterial" ColumnName="DetailsOfBiologicalMaterial" />
+          <ScalarProperty Name="BiologicalMaterial" ColumnName="BiologicalMaterial" />
+          <ScalarProperty Name="Disclosure" ColumnName="Disclosure" />
+          <ScalarProperty Name="SourceOfInvention" ColumnName="SourceOfInvention" />
+          <ScalarProperty Name="SupportInformation" ColumnName="SupportInformation" />
+          <ScalarProperty Name="PriorPublication" ColumnName="PriorPublication" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Summary" ColumnName="Summary" />
+          <ScalarProperty Name="FieldOfInvention" ColumnName="FieldOfInvention" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="FirstApplicantContactNo" ColumnName="FirstApplicantContactNo" />
+          <ScalarProperty Name="FirstApplicantEmailId" ColumnName="FirstApplicantEmailId" />
+          <ScalarProperty Name="FirstApplicantAddress" ColumnName="FirstApplicantAddress" />
+          <ScalarProperty Name="FirstApplicantPosition" ColumnName="FirstApplicantPosition" />
+          <ScalarProperty Name="FirstApplicantOrganisation" ColumnName="FirstApplicantOrganisation" />
+          <ScalarProperty Name="FirstApplicantName" ColumnName="FirstApplicantName" />
+          <ScalarProperty Name="PIContactNo" ColumnName="PIContactNo" />
+          <ScalarProperty Name="PIInstId" ColumnName="PIInstId" />
+          <ScalarProperty Name="PIEmailId" ColumnName="PIEmailId" />
+          <ScalarProperty Name="PIDepartment" ColumnName="PIDepartment" />
+          <ScalarProperty Name="PrimaryInventorName" ColumnName="PrimaryInventorName" />
+          <ScalarProperty Name="PrimaryInventorType" ColumnName="PrimaryInventorType" />
+          <ScalarProperty Name="IDFType" ColumnName="IDFType" />
+          <ScalarProperty Name="FileNo" ColumnName="FileNo" />
+          <ScalarProperty Name="VersionId" ColumnName="VersionId" />
+          <ScalarProperty Name="tranx_id" ColumnName="tranx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_trx_CoInventor">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_trx_CoInventor">
+        <MappingFragment StoreEntitySet="tbl_trx_CoInventor">
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="InstId" ColumnName="InstId" />
+          <ScalarProperty Name="Dept" ColumnName="Dept" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="FileNo" ColumnName="FileNo" />
+          <ScalarProperty Name="SNo" ColumnName="SNo" />
+          <ScalarProperty Name="VersionId" ColumnName="VersionId" />
+          <ScalarProperty Name="tranx_id" ColumnName="tranx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblApplicationAreas">
+      <EntityTypeMapping TypeName="PatentISModel.tblApplicationAreas">
+        <MappingFragment StoreEntitySet="tblApplicationAreas">
+          <ScalarProperty Name="Areas" ColumnName="Areas" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="FileNo" ColumnName="FileNo" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="tranx_id" ColumnName="tranx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
