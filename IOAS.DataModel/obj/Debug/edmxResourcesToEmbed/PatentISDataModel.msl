@@ -641,5 +641,28 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="tbl_trx_DesignClasses">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_trx_DesignClasses">
+        <MappingFragment StoreEntitySet="tbl_trx_DesignClasses">
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="FileNo" ColumnName="FileNo" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="VersionId" ColumnName="VersionId" />
+          <ScalarProperty Name="tranx_id" ColumnName="tranx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_DesignClasses">
+      <EntityTypeMapping TypeName="PatentISModel.tbl_DesignClasses">
+        <MappingFragment StoreEntitySet="tbl_DesignClasses">
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="Index" ColumnName="Index" />
+          <ScalarProperty Name="FileNo" ColumnName="FileNo" />
+          <ScalarProperty Name="Sno" ColumnName="Sno" />
+          <ScalarProperty Name="tranx_id" ColumnName="tranx_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

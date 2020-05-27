@@ -29,3 +29,9 @@ E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\DataAccessL
 E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\DataAccessLayer\obj\Debug\DynamicReports.dll
 E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\DataAccessLayer\obj\Debug\DynamicReports.pdb
 E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+E:\PatentIS\IOASPatentIS\DataAccessLayer\bin\Debug\DynamicReports.dll
+E:\PatentIS\IOASPatentIS\DataAccessLayer\bin\Debug\DynamicReports.pdb
+E:\PatentIS\IOASPatentIS\DataAccessLayer\obj\Debug\DataAccessLayer.csprojAssemblyReference.cache
+E:\PatentIS\IOASPatentIS\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+E:\PatentIS\IOASPatentIS\DataAccessLayer\obj\Debug\DynamicReports.dll
+E:\PatentIS\IOASPatentIS\DataAccessLayer\obj\Debug\DynamicReports.pdb

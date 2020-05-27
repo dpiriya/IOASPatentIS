@@ -49,3 +49,15 @@ E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\IOAS.DataMo
 E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\IOAS.DataModel\obj\Debug\IOAS.DataModel.dll
 E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\IOAS.DataModel\obj\Debug\IOAS.DataModel.pdb
 E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\IOAS.DataModel\obj\Debug\IOAS.DataModel.csprojResolveAssemblyReference.cache
+E:\PatentIS\IOASPatentIS\IOAS.DataModel\bin\Debug\IOAS.DataModel.dll.config
+E:\PatentIS\IOASPatentIS\IOAS.DataModel\bin\Debug\IOAS.DataModel.dll
+E:\PatentIS\IOASPatentIS\IOAS.DataModel\bin\Debug\IOAS.DataModel.pdb
+E:\PatentIS\IOASPatentIS\IOAS.DataModel\bin\Debug\EntityFramework.dll
+E:\PatentIS\IOASPatentIS\IOAS.DataModel\bin\Debug\EntityFramework.SqlServer.dll
+E:\PatentIS\IOASPatentIS\IOAS.DataModel\bin\Debug\EntityFramework.xml
+E:\PatentIS\IOASPatentIS\IOAS.DataModel\bin\Debug\EntityFramework.SqlServer.xml
+E:\PatentIS\IOASPatentIS\IOAS.DataModel\obj\Debug\IOAS.DataModel.csprojAssemblyReference.cache
+E:\PatentIS\IOASPatentIS\IOAS.DataModel\obj\Debug\IOAS.DataModel.csproj.CoreCompileInputs.cache
+E:\PatentIS\IOASPatentIS\IOAS.DataModel\obj\Debug\IOAS.DataModel.csproj.CopyComplete
+E:\PatentIS\IOASPatentIS\IOAS.DataModel\obj\Debug\IOAS.DataModel.dll
+E:\PatentIS\IOASPatentIS\IOAS.DataModel\obj\Debug\IOAS.DataModel.pdb

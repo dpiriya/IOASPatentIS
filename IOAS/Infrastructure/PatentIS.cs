@@ -105,6 +105,14 @@ namespace IOAS.Infrastructure
                 return query;
             }
         }
+        public static List<string> DesignActionList()
+        {
+            using (PatentISEntities pat = new PatentISEntities())
+            {
+                var query = pat.tbl_mst_ListItem.Where(m => m.Category == "DesignPatent" && m.Grouping == "RequestedAction").Select(m => m.ItemText).ToList();
+                return query;
+            }
+        }
         public static List<string> StageList()
         {
             using (PatentISEntities pat = new PatentISEntities())
@@ -174,6 +182,14 @@ namespace IOAS.Infrastructure
             using (PatentISEntities pat = new PatentISEntities())
             {
                 var query = pat.tbl_mst_ListItem.Where(m => m.Category == "copyright" && m.Grouping == "ClassOfWork").Select(m =>m.ItemText).ToList();
+                return query;
+            }
+        }
+        public static List<SelectListItem> DPClass()
+        {
+            using (PatentISEntities pat = new PatentISEntities())
+            {
+                var query = pat.tbl_mst_ListItem.Where(m => m.Category == "DesignPatent" && m.Grouping == "Classes").Select(m => new SelectListItem { Value = (m.ItemValue + "-" + m.ItemText), Text = (m.ItemValue+"-"+m.ItemText)}).ToList();
                 return query;
             }
         }

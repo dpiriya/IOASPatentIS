@@ -9,16 +9,16 @@
   </EntityType>
   <EntityType Name="Faculty_Details">
     <Key>
-      <PropertyRef Name="EmployeeId_old" />
+      <PropertyRef Name="EmployeeId" />
     </Key>
-    <Property Name="EmployeeId_old" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="EmployeeId" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="EmployeeName" Type="nvarchar" MaxLength="150" />
     <Property Name="EmployeeDesignation" Type="nvarchar" MaxLength="150" />
     <Property Name="DepartmentCode" Type="nchar" MaxLength="10" />
     <Property Name="DepartmentName" Type="nvarchar" MaxLength="150" />
     <Property Name="Email" Type="nvarchar" MaxLength="150" />
     <Property Name="ContactNumber" Type="nvarchar" MaxLength="50" />
-    <Property Name="EmployeeId" Type="int" />
+    <Property Name="EmployeeId_old" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="Staff_Details">
     <Key>
@@ -31,7 +31,6 @@
     <Property Name="DepartmentName" Type="nvarchar" MaxLength="150" />
     <Property Name="Email" Type="nvarchar" MaxLength="150" />
     <Property Name="ContactNumber" Type="nvarchar" MaxLength="50" />
-    <Property Name="CastEmployeeId" Type="int" />
   </EntityType>
   <EntityType Name="Student_Details">
     <Key>

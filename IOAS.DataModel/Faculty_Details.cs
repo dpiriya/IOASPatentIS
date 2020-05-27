@@ -14,13 +14,13 @@ namespace IOAS.DataModel
     
     public partial class Faculty_Details
     {
-        public string EmployeeId_old { get; set; }
+        public string EmployeeId { get; set; }
         public string EmployeeName { get; set; }
         public string EmployeeDesignation { get; set; }
         public string DepartmentCode { get; set; }
         public string DepartmentName { get; set; }
         public string Email { get; set; }
         public string ContactNumber { get; set; }
-        public Nullable<int> EmployeeId { get; set; }
+        public string EmployeeId_old { get; set; }
     }
 }

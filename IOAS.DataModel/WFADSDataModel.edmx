@@ -14,16 +14,16 @@
         </EntityType>
         <EntityType Name="Faculty_Details">
           <Key>
-            <PropertyRef Name="EmployeeId_old" />
+            <PropertyRef Name="EmployeeId" />
           </Key>
-          <Property Name="EmployeeId_old" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="EmployeeId" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="EmployeeName" Type="nvarchar" MaxLength="150" />
           <Property Name="EmployeeDesignation" Type="nvarchar" MaxLength="150" />
           <Property Name="DepartmentCode" Type="nchar" MaxLength="10" />
           <Property Name="DepartmentName" Type="nvarchar" MaxLength="150" />
           <Property Name="Email" Type="nvarchar" MaxLength="150" />
           <Property Name="ContactNumber" Type="nvarchar" MaxLength="50" />
-          <Property Name="EmployeeId" Type="int" />
+          <Property Name="EmployeeId_old" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="Staff_Details">
           <Key>
@@ -36,7 +36,6 @@
           <Property Name="DepartmentName" Type="nvarchar" MaxLength="150" />
           <Property Name="Email" Type="nvarchar" MaxLength="150" />
           <Property Name="ContactNumber" Type="nvarchar" MaxLength="50" />
-          <Property Name="CastEmployeeId" Type="int" />
         </EntityType>
         <EntityType Name="Student_Details">
           <Key>
@@ -72,7 +71,6 @@
           <Property Name="DepartmentName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Name="Email" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Name="ContactNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="CastEmployeeId" Type="Int32" />
         </EntityType>
         <EntityType Name="Student_Details">
           <Key>
@@ -102,16 +100,16 @@
         </EntityType>
         <EntityType Name="Faculty_Details">
           <Key>
-            <PropertyRef Name="EmployeeId_old" />
+            <PropertyRef Name="EmployeeId" />
           </Key>
-          <Property Name="EmployeeId_old" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EmployeeId" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="EmployeeName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Name="EmployeeDesignation" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Name="DepartmentCode" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
           <Property Name="DepartmentName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Name="Email" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Name="ContactNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="EmployeeId" Type="Int32" />
+          <Property Name="EmployeeId_old" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -129,7 +127,6 @@
                 <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
                 <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
-                <ScalarProperty Name="CastEmployeeId" ColumnName="CastEmployeeId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -158,14 +155,14 @@
           <EntitySetMapping Name="Faculty_Details">
             <EntityTypeMapping TypeName="WFADSModel.Faculty_Details">
               <MappingFragment StoreEntitySet="Faculty_Details">
-                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+                <ScalarProperty Name="EmployeeId_old" ColumnName="EmployeeId_old" />
                 <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
                 <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
                 <ScalarProperty Name="DepartmentCode" ColumnName="DepartmentCode" />
                 <ScalarProperty Name="EmployeeDesignation" ColumnName="EmployeeDesignation" />
                 <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
-                <ScalarProperty Name="EmployeeId_old" ColumnName="EmployeeId_old" />
+                <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

@@ -61,5 +61,7 @@ namespace IOAS.DataModel
         public virtual DbSet<tbl_trx_IDFRequest> tbl_trx_IDFRequest { get; set; }
         public virtual DbSet<tbl_trx_CoInventor> tbl_trx_CoInventor { get; set; }
         public virtual DbSet<tblApplicationAreas> tblApplicationAreas { get; set; }
+        public virtual DbSet<tbl_trx_DesignClasses> tbl_trx_DesignClasses { get; set; }
+        public virtual DbSet<tbl_DesignClasses> tbl_DesignClasses { get; set; }
     }
 }

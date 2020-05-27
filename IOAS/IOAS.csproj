@@ -241,6 +241,7 @@
     <Compile Include="Models\PatentIS\CRAuthorVM.cs" />
     <Compile Include="Models\PatentIS\CRPublishrptVM.cs" />
     <Compile Include="Models\PatentIS\CRPublishVM.cs" />
+    <Compile Include="Models\PatentIS\DesignClassVM.cs" />
     <Compile Include="Models\PatentIS\DraftAnnexVM.cs" />
     <Compile Include="Models\PatentIS\DraftAppAreasVM.cs" />
     <Compile Include="Models\PatentIS\DraftApplicantVM.cs" />

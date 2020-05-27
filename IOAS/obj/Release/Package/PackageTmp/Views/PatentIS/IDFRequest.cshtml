@@ -90,19 +90,29 @@
         <div class="col-md-12 mt10">
             <div class="page-wrapper" id="createIDFRequest">
                 <div class="row" id="main-menu">
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <div class="form-group  ">
                             @Html.RadioButtonFor(m => m.IDFType, "Patent")@Html.Label("Patent")
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <div class="form-group  ">
                             @Html.RadioButtonFor(m => m.IDFType, "Trademark")@Html.Label("Trademark")
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <div class="form-group">
                             @Html.RadioButtonFor(m => m.IDFType, "Copyright")@Html.Label("Copyright")
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            @Html.RadioButtonFor(m => m.IDFType, "TradeSecret")@Html.Label("TradeSecret")
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            @Html.RadioButtonFor(m => m.IDFType, "DesignPatent")@Html.Label("DesignPatent")
                         </div>
                     </div>
                 </div>
@@ -112,6 +122,7 @@
                         <li class="Common"><a href="javascript:void(0)">Applicant Details</a></li>
                         <li class="Common"><a href="javascript:void(0)">Project Details</a></li>
                         <li class="Common"><a href="javascript:void(0)">Support Information</a></li>
+                        <li class="DesignPatent"><a href="javascript:void(0)">Classes</a></li>
                         <li class="Common"><a href="javascript:void(0)">Annexure B-1</a></li>
                         <li class="Common"><a href="javascript:void(0)">Annexure Conti..</a></li>
                         <li class="Trademark"><a href="javascript:void(0)">Form TM-A</a></li>
@@ -150,7 +161,7 @@ new { @class = "form-control", @required = "required", @id = "pitype" })
                                         @Html.TextBoxFor(m => m.PrimaryInventorName, new { @class = "form-control", @id = "piname" })
                                         @*@Html.DropDownListFor(m => m.PrimaryInventorName, new SelectList(""), "Select Name", new { @class = "form-control ", @id = "piname" })
 
-                                            @Html.TextBoxFor(m => m.PrimaryInventorName, new { @class = "form-control", @id = "txtpiname" })*@
+                            @Html.TextBoxFor(m => m.PrimaryInventorName, new { @class = "form-control", @id = "txtpiname" })*@
 
                                         <div class="txt-error txt-red">@Html.ValidationMessageFor(m => m.PrimaryInventorName)</div>
                                     </div>
@@ -252,6 +263,12 @@ new { @class = "form-control", @required = "required", @id = "pitype" })
                                         <div class="divTrademark">
                                             <label class="required"> Name to be applied for Trademark registration <i class="ion-help-circled" title="Please specify the name for application of trademark registration."></i></label>
                                         </div>
+                                        <div class="divSecret">
+                                            <label class="required"> Title of the Invention/TradeSecret <i class="ion-help-circled" title="A slightly descriptive title to identify the nature of the invention"></i></label>
+                                        </div>
+                                        <div class="divDesignPat">
+                                            <label class="required"> Title of the design <i class="ion-help-circled" title="A slightly descriptive title to identify the nature of the invention. Design protection is sought for external structures"></i></label>
+                                        </div>
                                         @Html.TextBoxFor(m => m.Title, new { @class = "form-control", @placeholder = "Check on the Help icon for detailed information" })
                                     </div>
                                 </div>
@@ -272,6 +289,19 @@ new { @class = "form-control", @required = "required", @id = "pitype" })
 "></i>
                                             </label>
                                         </div>
+                                        <div class="divDesignPat">
+                                            <label class="required">
+                                                Field /Area of the invention/Design  <i class="ion-help-circled" title="1. One or two sentences mentioning the specific technology area of the invention.
+2. Please provide a list of key words, which would define the novel & inventive aspects of your invention"></i>
+                                            </label>
+                                        </div>
+                                        <div class="divSecret">
+                                            <label class="required">
+                                                Field /Area of the invention  <i class="ion-help-circled" title="1. One or two sentences mentioning the specific technology area of the invention.
+2. Please provide a list of key words, which would define the novel & inventive aspects of your invention"></i>
+                                            </label>
+                                        </div>
+
                                         @Html.TextBoxFor(m => m.FieldOfInvention, new { @class = "form-control", @placeholder = "Check on the Help icon for detailed information" })
                                     </div>
                                 </div>
@@ -315,6 +345,23 @@ should be submitted at the IPM cell.
 2.Any image to be registered along with name, if any"></i>
                                             </label>
                                         </div>
+                                        <div class="divDesignPat">
+                                            <label class="required">
+                                                Description of the Design in detail, about 100-200 words including its industrial applicability. Various views of the design that has to be used for filing purpose.  <i class="ion-help-circled" title="	The design should be portrayed without withholding any key feature/design. Please provide the designs structures (Line diagram/CAD image/Photographs) in the following views, 1. Left side View, 2. Right side view, 3. Front side view, 4. Rear side view, 5. Top side view, 6. Bottom side view, and 7. Isometric views (If possible clear images shall be attached separately)
+Any Modification or alternative forms of the design may be described.
+If required please provide the operation methodology of the design, the manner in which it has to be operated.
+Any supporting data related to the invention such as drawings,illustrations, test data,graphs,charts etc."></i>
+                                            </label>
+                                        </div>
+                                        <div class="divSecret">
+                                            <label class="required">
+                                                Description of the invention in detail(Key references to be cited here.  Detailed document may be attached separately and shared with the Attorney as required or made available for direct filing at the Patent Office).<i class="ion-help-circled" title="1.The invention should be described without withholding any key information. It may be written in a simple manner. A person who is having ordinary skill in the area of research should be able to understand the description and reproduce / carry out the invention without any undue experimentation.
+If the inventor has prepared any draft manuscript for future publication, it may be shared in lieu of detailed description.
+2.Any modification or alternative forms of the invention may be described.
+3.In case of the inventions conceived to be workable, but not yet worked out, may also be described. They should be described in the manner they should be actually performed.
+4.Any supporting data related to the invention such as drawings, illustrations, test data, graphs, charts, etc."></i>
+                                            </label>
+                                        </div>
                                         @Html.TextBoxFor(m => m.Description, new { @class = "form-control", @placeholder = "Check on the Help icon for detailed information" })
                                     </div>
                                 </div>
@@ -322,7 +369,7 @@ should be submitted at the IPM cell.
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group custom-form-group">
-                                        <div class="divPatent">
+                                        <div class="divPatent divDesignPat divSecret">
                                             <label class="required">
                                                 Prior publications /Patents by /available with the inventors  <i class="ion-help-circled" title="1. Outcomes of all searches(patent & non-patent) already done including a list of other references relevant to the invention to be shared.
 2. Has the same or a part of the invention been published or presented in a public forum by the inventors? If yes, please provide the details. If no, please share any other publications/presentation by the inventors relevant to the area of the current invention.
@@ -379,7 +426,7 @@ granted, please give the number. If it is not published yet, an abstract may be 
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group custom-form-group">
-                                    <div class="divPatcopy">
+                                    <div class="divPatcopy divDesignPat divSecret">
                                         <label class="required">
                                             Support Information   <i class="ion-help-circled" title="1. Are any Government /external funding sources being used for the research? Please provide details. (Project Number & Title)
 2. Please attach copy of agreements with funding agencies and sponsoring agencies. Clarify if rights to any intellectual property arising out of the project have to be shared / assigned."></i>
@@ -405,7 +452,7 @@ wish to apply for trademark registration."></i>
                                 </div>
                             </div>
                         </div>
-                        <div class="divPatent">
+                        <div class="divPatent divSecret">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group custom-form-group">
@@ -436,7 +483,7 @@ wish to apply for trademark registration."></i>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group custom-form-group ">
-                                    <div class="divPatcopy">
+                                    <div class="divPatcopy divDesignPat divSecret">
                                         <label class="required">
                                             Any other relavant Information   <i class="ion-help-circled" title="1. Is there any urgency on account of publishing in a journal; presentation at a seminar; response to competition etc. If yes, a provisional specification should be filed prior to the same. Details provided for patent filing should cover all that is to be published and more.
 2. Please indicate latest date by when provisional is to be filed."></i>
@@ -453,7 +500,7 @@ wish to apply for trademark registration."></i>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="reqaction col-md-12">
                                 <div class="form-group ">
                                     <h3 class="spl-title required">
                                         Requested Action: Chose Appropriate   <i class="ion-help-circled" title="Note: It is mandatory to undertake Direct International filing only after obtaining Foreign Filing License[FFL] from Indian Patent Office.
@@ -511,104 +558,146 @@ Non Compliance of this stipulation is a punishable offence. Application for the 
 
                             </div>
                         </div>
-                    </div>
-                    @*<div class="tab Trade">
-                        <div class="col-md-12 col-sm-12">
+                        <div class="divDesignPat">
                             <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group custom-form-group">
-                                        <label class="required"> Name to be applied for Trademark registration <i class="ion-help-circled" title="Specify the name for trademark registration"></i></label>
-                                        @Html.TextBoxFor(m => m.Title, new { @class = "form-control", @placeholder = "Specify the name for trademark registration" })
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group custom-form-group ">
-                                        <label class="required">
-                                            Field /Area of use of the trademark  <i class="ion-help-circled" title="1. Specify the relevant application areas in which the trademark being applied shall be used.
-2. Please specify the date of first use of the proposed trademark or image work"></i>
-                                        </label>
-                                        @Html.TextBoxFor(m => m.FieldOfInvention, new { @class = "form-control", @placeholder = "Specify the relevant application areas in which the trademark being applied shall be used" })
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group custom-form-group ">
-                                        <label class="required">
-                                            Description of the invention <i class="ion-help-circled" title="1. A short description explaining the trademark and its use.
-2. Any image to be registered along with name, if any"></i>
-                                        </label>
-                                        @Html.TextBoxFor(m => m.Description, new { @class = "form-control", @placeholder = "A short description explaining the trademark and its use" })
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group custom-form-group ">
-                                        <label>
-                                            Prior Trademarks by/ available with the inventors <i class="ion-help-circled" title="1. A short description the trademark and its use.
-2. Any image to be registered along with name, if any"></i>
-                                        </label>
-                                        @Html.TextBoxFor(m => m.PriorPublication, new { @class = "form-control", @placeholder = "A short description the trademark and its use" })
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group custom-form-group">
-                                        <label class="required">
-                                            Support Information   <i class="ion-help-circled" title="If any additional information about the trademark application, for example, intended jurisdictions for which the inventor wish to apply for trademark registration."></i>
-                                        </label>
-                                        @Html.TextBoxFor(m => m.SupportInformation, new { @class = "form-control", @placeholder = "If any additional information about the trademark application, for example, intended jurisdictions for which the inventor wish to apply for trademark registration." })
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group custom-form-group ">
-                                        <label class="required">
-                                            Disclosure Information   <i class="ion-help-circled" title="Has any disclosure been made to any person, whether public or confidential eg. Publication in journals, discussion with suppliers or potential partners about the filing / registration of the trademark."></i>
-                                        </label>
-                                        @Html.TextBoxFor(m => m.Disclosure, new { @class = "form-control", @placeholder = "Has any disclosure been made to any person, whether public or confidential eg. Publication in journals, discussion with suppliers or potential partners about the filing / registration of the trademark. " })
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group custom-form-group ">
-                                        <label class="required">
-                                            Any other relavant Information   <i class="ion-help-circled" title="1. Image details if any, to be filed along with trademark registration.
-2. Please indicate latest date by when trademark is to be filed."></i>
-                                        </label>
-                                        @Html.TextBoxFor(m => m.RelevantInformation, new { @class = "form-control", @placeholder = "Image details if any, to be filed along with trademark registration." })
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group ">
-                                        <h3 class="spl-title required">
-                                            Requested Action: Tick as Appropriate
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                @foreach (var act2 in Model.TMListAction)
+                                @foreach (var act3 in Model.DPListAction)
                                 {
                                     <div class="col-md-4">
                                         <div class="form-group custom-form-group ">
-                                            @Html.RadioButtonFor(m => m.RequestedTMAction, act2) @act2
+                                            @Html.RadioButtonFor(m => m.RequestedDPAction, act3) @act3
                                         </div>
                                     </div>
-
                                 }
-
+                                <div class="col-md-4">
+                                    <div class="form-group custom-form-group ">
+                                        @Html.TextBoxFor(m => m.RequestedDPtxtAction, new { @class = "form-control", style = "display: none;", @placeholder = "For outside India, Please specify the geographies in which design patent is to be filed" })
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>*@
+                    </div>
+                    <div class="tab Design">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label>
+                                        Classes of Design to be registered(Please select the classes for design registration, which is applicable for your design)<i class="ion-help-circled" title="To view the detailed explanation of classes for your reference"><a href="https://www.wipo.int/classifications/locarno/locpub/en/fr/" target="_blank"> Click Here</a></i>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                @for (int i = 0; i < Model.DesignClass.ClassList.Count(); i++)
+                                {
+                                    <div class="col-md-3">
+                                        <div class="form-group custom-form-group ">
+                                            @*<input type="checkbox" value="@Model.Annex.ListIndustry[i].Value" id="@Model.Annex.ListIndustry[i].Value" />
+        @Model.Annex.ListIndustry[i].Value*@
+                                            @Html.CheckBoxFor(m => m.DesignClass.ClassList[i].Selected, new { @id = Model.DesignClass.ClassList[i].Value })
+                                            @Html.DisplayFor(m => m.DesignClass.ClassList[i].Text)
+                                            @Html.HiddenFor(m => m.DesignClass.ClassList[i].Value)
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    @*<div class="tab Trade">
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group custom-form-group">
+                                                <label class="required"> Name to be applied for Trademark registration <i class="ion-help-circled" title="Specify the name for trademark registration"></i></label>
+                                                @Html.TextBoxFor(m => m.Title, new { @class = "form-control", @placeholder = "Specify the name for trademark registration" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group custom-form-group ">
+                                                <label class="required">
+                                                    Field /Area of use of the trademark  <i class="ion-help-circled" title="1. Specify the relevant application areas in which the trademark being applied shall be used.
+        2. Please specify the date of first use of the proposed trademark or image work"></i>
+                                                </label>
+                                                @Html.TextBoxFor(m => m.FieldOfInvention, new { @class = "form-control", @placeholder = "Specify the relevant application areas in which the trademark being applied shall be used" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group custom-form-group ">
+                                                <label class="required">
+                                                    Description of the invention <i class="ion-help-circled" title="1. A short description explaining the trademark and its use.
+        2. Any image to be registered along with name, if any"></i>
+                                                </label>
+                                                @Html.TextBoxFor(m => m.Description, new { @class = "form-control", @placeholder = "A short description explaining the trademark and its use" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group custom-form-group ">
+                                                <label>
+                                                    Prior Trademarks by/ available with the inventors <i class="ion-help-circled" title="1. A short description the trademark and its use.
+        2. Any image to be registered along with name, if any"></i>
+                                                </label>
+                                                @Html.TextBoxFor(m => m.PriorPublication, new { @class = "form-control", @placeholder = "A short description the trademark and its use" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group custom-form-group">
+                                                <label class="required">
+                                                    Support Information   <i class="ion-help-circled" title="If any additional information about the trademark application, for example, intended jurisdictions for which the inventor wish to apply for trademark registration."></i>
+                                                </label>
+                                                @Html.TextBoxFor(m => m.SupportInformation, new { @class = "form-control", @placeholder = "If any additional information about the trademark application, for example, intended jurisdictions for which the inventor wish to apply for trademark registration." })
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group custom-form-group ">
+                                                <label class="required">
+                                                    Disclosure Information   <i class="ion-help-circled" title="Has any disclosure been made to any person, whether public or confidential eg. Publication in journals, discussion with suppliers or potential partners about the filing / registration of the trademark."></i>
+                                                </label>
+                                                @Html.TextBoxFor(m => m.Disclosure, new { @class = "form-control", @placeholder = "Has any disclosure been made to any person, whether public or confidential eg. Publication in journals, discussion with suppliers or potential partners about the filing / registration of the trademark. " })
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group custom-form-group ">
+                                                <label class="required">
+                                                    Any other relavant Information   <i class="ion-help-circled" title="1. Image details if any, to be filed along with trademark registration.
+        2. Please indicate latest date by when trademark is to be filed."></i>
+                                                </label>
+                                                @Html.TextBoxFor(m => m.RelevantInformation, new { @class = "form-control", @placeholder = "Image details if any, to be filed along with trademark registration." })
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group ">
+                                                <h3 class="spl-title required">
+                                                    Requested Action: Tick as Appropriate
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        @foreach (var act2 in Model.TMListAction)
+                                        {
+                                            <div class="col-md-4">
+                                                <div class="form-group custom-form-group ">
+                                                    @Html.RadioButtonFor(m => m.RequestedTMAction, act2) @act2
+                                                </div>
+                                            </div>
+
+                                        }
+
+                                    </div>
+                                </div>
+                            </div>*@
                     <div class="tab Common">
                         <div class="col-md-12 col-sm-12">
                             <div class="row">
@@ -662,7 +751,7 @@ Non Compliance of this stipulation is a punishable offence. Application for the 
                                     <div class="col-md-3">
                                         <div class="form-group custom-form-group ">
                                             @*<input type="checkbox" value="@Model.Annex.ListIndustry[i].Value" id="@Model.Annex.ListIndustry[i].Value" />
-                                                @Model.Annex.ListIndustry[i].Value*@
+                                @Model.Annex.ListIndustry[i].Value*@
                                             @Html.CheckBoxFor(m => m.Annex.ListIndustry[i].Selected, new { @id = Model.Annex.ListIndustry[i].Value })
                                             @Html.DisplayFor(m => m.Annex.ListIndustry[i].Value)
                                             @Html.HiddenFor(m => m.Annex.ListIndustry[i].Value)
@@ -683,7 +772,7 @@ Non Compliance of this stipulation is a punishable offence. Application for the 
                                     <div class="col-md-3">
                                         <div class="form-group custom-form-group ">
                                             @*<input type="checkbox" value="@Model.Annex.ListIndustry1[i].Value" id="@Model.Annex.ListIndustry1[i].Value" />
-                                                @Model.Annex.ListIndustry1[i].Value*@
+                                @Model.Annex.ListIndustry1[i].Value*@
                                             @Html.CheckBoxFor(m => m.Annex.ListIndustry1[i].Selected, new { @id = Model.Annex.ListIndustry1[i].Value })
                                             @Html.DisplayFor(m => m.Annex.ListIndustry1[i].Value)
                                             @Html.HiddenFor(m => m.Annex.ListIndustry1[i].Value)
@@ -816,14 +905,14 @@ Non Compliance of this stipulation is a punishable offence. Application for the 
                                 </div>
                             </div>
                             <div class="row">
-                                @foreach(var cat in Model.Trade.Catlist)
+                                @foreach (var cat in Model.Trade.Catlist)
                                 {
                                     <div class="col-md-6">
                                         <div class="form-group custom-form-group ">
-                                            @Html.RadioButtonFor(m=>m.Trade.Category,cat)@cat
+                                            @Html.RadioButtonFor(m => m.Trade.Category, cat)@cat
                                             @*@Html.RadioButtonFor(m => m.Trade.Catlist[i].Selected, new { @id = Model.Trade.Catlist[i].Value })
-                                            @Html.DisplayFor(m => m.Trade.Catlist[i].Value)
-                                            @Html.HiddenFor(m => m.Trade.Catlist[i].Value)*@
+                                @Html.DisplayFor(m => m.Trade.Catlist[i].Value)
+                                @Html.HiddenFor(m => m.Trade.Catlist[i].Value)*@
                                         </div>
                                     </div>
                                 }
@@ -835,7 +924,7 @@ Non Compliance of this stipulation is a punishable offence. Application for the 
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group custom-form-group ">
-                                        @Html.Label("TradeMark (Name to be applied)",new { @class = "required" })
+                                        @Html.Label("TradeMark (Name to be applied)", new { @class = "required" })
                                         @Html.TextBoxFor(m => m.Trade.TMName, new { @class = "form-control" })
                                     </div>
                                 </div>
@@ -955,6 +1044,7 @@ Non Compliance of this stipulation is a punishable offence. Application for the 
                             </div>
                         </div>
                     </div>
+
                     <div class="tab Common">
                         <div class="col-md-12 col-sm-12">
                             <div class="row">
@@ -1169,47 +1259,90 @@ Non Compliance of this stipulation is a punishable offence. Application for the 
     });
     $(function () {
 
-        if ($('#formUpdate').val() == "True" || $('#draftUpdate').val()=="True") {
-           //$('#main-menu').hide();
+        if ($('#formUpdate').val() == "True" || $('#draftUpdate').val() == "True") {
+            //$('#main-menu').hide();
             $('#main-menu').find(':radio:not(:checked)').attr('disabled', true);
-           
-        }       
+
+        }
         var v = $("input:radio[name=IDFType]:checked").val();
         currentTab = 0;
-        if (v == "Patent") {
-            var c = $('.tab.Common,.tab.Pat');
-            var d = "li.Common";
-            $('.Patent').show();
-            $('.divPatent').show();
-            $('.divPatcopy').show();
-            $('.Trademark').hide();
-            $('.CopyRight').hide();
-            $('.divCopyRight').hide();
-            $('.divTrademark').hide();
-            showTab(currentTab, c, d);
-        }
-        else if (v == "Trademark") {
+        if (v == "Trademark") {
             var c = $('.tab.Common,.tab.Trade');
             var d = "li.Common,li.Trademark";
             $('.Trademark').show();
             $('.Patent').hide();
+            $('.DesignPatent').hide();
             $('.divPatent').hide();
             $('.divPatcopy').hide();
+            $('.divSecret').hide();
             $('.CopyRight').hide();
             $('.divCopyRight').hide();
             $('.divTrademark').show();
+            $('.divDesignPat').hide();
+            $('reqaction').show();
             showTab(currentTab, c, d);
         }
-        else {
+        else if (v == "Copyright") {
             var c = $('.tab.Common,.tab.Pat,.tab.CopyRi');
             var d = "li.Common,li.CopyRight";
             $('.Patent').hide();
             $('.divPatent').hide();
             $('.Trademark').hide();
+            $('.DesignPatent').hide();
+            $('reqaction').show();
             $('.divPatcopy').show();
             $('.CopyRight').show();
             $('.divCopyRight').show();
             $('.divTrademark').hide();
+            $('.divDesignPat').hide();
+            $('.divSecret').hide();
+            showTab(currentTab, c, d);
+        }
+        else if (v == "TradeSecret") {
+            var c = $('.tab.Common,.tab.Pat,.tab.CopyRi');
+            var d = "li.Common,li.CopyRight";
+            $('.Patent').hide();
+            $('.reqaction').hide();
+            $('.divPatent').hide();
+            $('.DesignPatent').hide();
+            $('.Trademark').hide();
+            $('.divPatcopy').hide();
+            $('.CopyRight').hide();
+            $('.divCopyRight').hide();
+            $('.divTrademark').hide();
+            $('.divDesignPat').hide();
+            $('.divSecret').show();
+            showTab(currentTab, c, d);
+        }
+        else if (v == "DesignPatent") {
+            var c = $('.tab.Common,.tab.Design');
+            var d = "li.Common,li.CopyRight";
+            $('.Patent').hide();
+            $('.divPatent').hide();
+            $('.DesignPatent').show();
+            $('.Trademark').hide();
+            $('.divPatcopy').hide();
+            $('.divSecret').hide();
+            $('.CopyRight').hide();
+            $('.divCopyRight').hide();
+            $('.divTrademark').hide();
+            $('.divDesignPat').show();
+            $('reqaction').show();            
+            showTab(currentTab, c, d);
+        }
+        else {
+            var c = $('.tab.Common,.tab.Pat');
+            var d = "li.Common";            
+            $('.DesignPatent').hide();
+            $('.Trademark').hide();
+            $('.CopyRight').hide();
+            $('.divSecret').hide();
+            $('.divCopyRight').hide();
+            $('.divTrademark').hide();
+            $('.divDesignPat').hide(); 
+            $('.Patent').show();
+            $('.divPatent').show();
+            $('.divPatcopy').show();
             showTab(currentTab, c, d);
         }
         $('#DetailsOfBiologicalMaterial').attr("disabled", true);
@@ -1270,6 +1403,15 @@ Non Compliance of this stipulation is a punishable offence. Application for the 
         else
             $('#RequestedCRtxtAction').hide();
     });
+    $("input:radio[name=RequestedDPAction]").click(function () {
+        var w = $("input:radio[name=RequestedDPAction]:checked").val();
+        if (w == "Design Filing Outside India") {
+            $('#RequestedDPtxtAction').show();
+        }
+        else
+            $('#RequestedDPtxtAction').hide();
+    });
+
     $("input:radio[id=Annex_L1Search]").click(function () {
         if ($("input:radio[id=Annex_L1Search]:checked").val() == "True") {
             $('#L1').show();
@@ -1304,6 +1446,17 @@ Non Compliance of this stipulation is a punishable offence. Application for the 
             $('.divPatent').hide();
             $('.divCopyRight').hide();
             $('.divTrademark').show();
+            $('.CopyRight').hide();
+            $('.divPatcopy').hide();
+        }
+        else if (v == "DesignPatent") {
+            var c = $('.tab.Common,.tab.Design');
+            var d = "li.Common,li.DesignPatent";
+            $('.Trademark').show();
+            $('.Patent').hide();
+            $('.divPatent').hide();
+            $('.divCopyRight').hide();
+            $('.divDesignPat').show();
             $('.CopyRight').hide();
             $('.divPatcopy').hide();
         }
@@ -1360,6 +1513,14 @@ Non Compliance of this stipulation is a punishable offence. Application for the 
             var x = $('.tab.Common,.tab.Pat,.tab.CopyRi');
             var y = "li.Common,li.CopyRight";
         }
+        else if (v == "TradeSecret") {
+            var x = $('.tab.Common');
+            var y = "li.Common";
+        }
+        else if (v == "DesignPatent") {
+            var x = $('.tab.Common,.tab.Design');
+            var y = "li.Common,li.DesignPatent";
+        }
         var w = $("input:radio[name=RequestedCRAction]:checked").val();
         if (w == "Copyright filing outside India") {
             $('#RequestedCRtxtAction').show();
@@ -1403,6 +1564,12 @@ Non Compliance of this stipulation is a punishable offence. Application for the 
         else if (v == "Copyright") {
             var tabs = $(".tab.Common,.tab.Pat,.tab.CopyRi");
         }
+        else if (v == "TradeSecret") {
+            var tabs = $(".tab.Common");
+        }
+        else if (v == "DesignPatent") {
+            var tabs = $(".tab.Common,.tab.Design");
+        }
         else {
             $('#MsgValidation').html("Choose any one of the IDF Type (Patent/Trademark/Copyright/Trade Secret)");
             $('#ValidationModal').modal('toggle');
@@ -1429,7 +1596,6 @@ Non Compliance of this stipulation is a punishable offence. Application for the 
                     $('#MsgValidation').html("Enter PI name");
                     $('#ValidationModal').modal('toggle');
                     return false;
-
                 }
             }
             if (dept == "") {
@@ -1674,6 +1840,7 @@ Non Compliance of this stipulation is a punishable offence. Application for the 
     $(document).on('click', '#DocdivContent button[name="removeButton"]', function () {
         $(this).parent().parent("Div").remove();
     });
+
 </script>
 
 

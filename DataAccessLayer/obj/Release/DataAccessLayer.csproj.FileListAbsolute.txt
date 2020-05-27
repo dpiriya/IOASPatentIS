@@ -4,3 +4,9 @@ E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\DataAccessL
 E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\DataAccessLayer\obj\Release\DataAccessLayer.csproj.CoreCompileInputs.cache
 E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\DataAccessLayer\obj\Release\DynamicReports.dll
 E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\DataAccessLayer\obj\Release\DynamicReports.pdb
+E:\PatentIS\IOASPatentIS\DataAccessLayer\bin\Release\DynamicReports.dll
+E:\PatentIS\IOASPatentIS\DataAccessLayer\bin\Release\DynamicReports.pdb
+E:\PatentIS\IOASPatentIS\DataAccessLayer\obj\Release\DataAccessLayer.csprojAssemblyReference.cache
+E:\PatentIS\IOASPatentIS\DataAccessLayer\obj\Release\DataAccessLayer.csproj.CoreCompileInputs.cache
+E:\PatentIS\IOASPatentIS\DataAccessLayer\obj\Release\DynamicReports.dll
+E:\PatentIS\IOASPatentIS\DataAccessLayer\obj\Release\DynamicReports.pdb

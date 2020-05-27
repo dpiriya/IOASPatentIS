@@ -11,7 +11,6 @@
           <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
           <ScalarProperty Name="Email" ColumnName="Email" />
           <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
-          <ScalarProperty Name="CastEmployeeId" ColumnName="CastEmployeeId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -40,14 +39,14 @@
     <EntitySetMapping Name="Faculty_Details">
       <EntityTypeMapping TypeName="WFADSModel.Faculty_Details">
         <MappingFragment StoreEntitySet="Faculty_Details">
-          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="EmployeeId_old" ColumnName="EmployeeId_old" />
           <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
           <ScalarProperty Name="Email" ColumnName="Email" />
           <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
           <ScalarProperty Name="DepartmentCode" ColumnName="DepartmentCode" />
           <ScalarProperty Name="EmployeeDesignation" ColumnName="EmployeeDesignation" />
           <ScalarProperty Name="EmployeeName" ColumnName="EmployeeName" />
-          <ScalarProperty Name="EmployeeId_old" ColumnName="EmployeeId_old" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

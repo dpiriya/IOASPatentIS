@@ -9,3 +9,15 @@ E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\IOAS.DataMo
 E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\IOAS.DataModel\obj\Release\IOAS.DataModel.csproj.CoreCompileInputs.cache
 E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\IOAS.DataModel\obj\Release\IOAS.DataModel.dll
 E:\IOAS Public - Invoice Code\IOAS Public - Invoice Code\IOAS Public\IOAS.DataModel\obj\Release\IOAS.DataModel.pdb
+E:\PatentIS\IOASPatentIS\IOAS.DataModel\bin\Release\IOAS.DataModel.dll.config
+E:\PatentIS\IOASPatentIS\IOAS.DataModel\bin\Release\IOAS.DataModel.dll
+E:\PatentIS\IOASPatentIS\IOAS.DataModel\bin\Release\IOAS.DataModel.pdb
+E:\PatentIS\IOASPatentIS\IOAS.DataModel\bin\Release\EntityFramework.dll
+E:\PatentIS\IOASPatentIS\IOAS.DataModel\bin\Release\EntityFramework.SqlServer.dll
+E:\PatentIS\IOASPatentIS\IOAS.DataModel\bin\Release\EntityFramework.xml
+E:\PatentIS\IOASPatentIS\IOAS.DataModel\bin\Release\EntityFramework.SqlServer.xml
+E:\PatentIS\IOASPatentIS\IOAS.DataModel\obj\Release\IOAS.DataModel.csprojAssemblyReference.cache
+E:\PatentIS\IOASPatentIS\IOAS.DataModel\obj\Release\IOAS.DataModel.csproj.CoreCompileInputs.cache
+E:\PatentIS\IOASPatentIS\IOAS.DataModel\obj\Release\IOAS.DataModel.csproj.CopyComplete
+E:\PatentIS\IOASPatentIS\IOAS.DataModel\obj\Release\IOAS.DataModel.dll
+E:\PatentIS\IOASPatentIS\IOAS.DataModel\obj\Release\IOAS.DataModel.pdb

@@ -45,6 +45,16 @@
     <Property Name="Year" Type="int" />
     <Property Name="Country" Type="nvarchar(max)" />
   </EntityType>
+  <EntityType Name="tbl_DesignClasses">
+    <Key>
+      <PropertyRef Name="tranx_id" />
+    </Key>
+    <Property Name="tranx_id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Sno" Type="int" Nullable="false" />
+    <Property Name="FileNo" Type="bigint" Nullable="false" />
+    <Property Name="Index" Type="int" Nullable="false" />
+    <Property Name="Class" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
   <EntityType Name="tbl_draft_AnnexB1">
     <Key>
       <PropertyRef Name="DraftNo" />
@@ -419,6 +429,17 @@ warning 6002: The table/view 'PatentIS.dbo.tbl_draft_CR_Publish' does not have a
     <Property Name="Year" Type="int" />
     <Property Name="Country" Type="nvarchar(max)" />
   </EntityType>
+  <EntityType Name="tbl_trx_DesignClasses">
+    <Key>
+      <PropertyRef Name="tranx_id" />
+    </Key>
+    <Property Name="tranx_id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VersionId" Type="int" Nullable="false" />
+    <Property Name="Sno" Type="int" Nullable="false" />
+    <Property Name="FileNo" Type="bigint" Nullable="false" />
+    <Property Name="Index" Type="int" Nullable="false" />
+    <Property Name="Class" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
   <EntityType Name="tbl_trx_IDFRequest">
     <Key>
       <PropertyRef Name="tranx_id" />
@@ -611,6 +632,7 @@ warning 6002: The table/view 'PatentIS.dbo.tbl_draft_CR_Publish' does not have a
     <EntitySet Name="tbl_Copyright" EntityType="Self.tbl_Copyright" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_CR_Author" EntityType="Self.tbl_CR_Author" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_CR_Publish" EntityType="Self.tbl_CR_Publish" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_DesignClasses" EntityType="Self.tbl_DesignClasses" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_draft_AnnexB1" EntityType="Self.tbl_draft_AnnexB1" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_draft_AppAreas" EntityType="Self.tbl_draft_AppAreas" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_draft_applicants" EntityType="Self.tbl_draft_applicants" Schema="dbo" store:Type="Tables" />
@@ -634,6 +656,7 @@ warning 6002: The table/view 'PatentIS.dbo.tbl_draft_CR_Publish' does not have a
     <EntitySet Name="tbl_trx_Copyright" EntityType="Self.tbl_trx_Copyright" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_trx_CR_Author" EntityType="Self.tbl_trx_CR_Author" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_trx_CR_Publish" EntityType="Self.tbl_trx_CR_Publish" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_trx_DesignClasses" EntityType="Self.tbl_trx_DesignClasses" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_trx_IDFRequest" EntityType="Self.tbl_trx_IDFRequest" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_trx_Trade_Applicantdetail" EntityType="Self.tbl_trx_Trade_Applicantdetail" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_trx_Trademark" EntityType="Self.tbl_trx_Trademark" Schema="dbo" store:Type="Tables" />

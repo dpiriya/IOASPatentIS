@@ -44,6 +44,7 @@ namespace IOAS.Controllers
             ViewBag.CRCat = PatentIS.CRCategory();
             ViewBag.Nature = PatentIS.CRNature();
             ViewBag.CRClass = PatentIS.CRClass();
+            model.DesignClass.ClassList = PatentIS.DPClass();
             if (dno == null)
             {
                 if (ReqNo == 0)
@@ -61,7 +62,7 @@ namespace IOAS.Controllers
                     bool isOpen = PatentService.VerifyOpenStatus(ReqNo);
                     if(isOpen)
                     {
-                        model.FileNo = ReqNo;
+                        model.FileNo = ReqNo;                        
                         model = PatentService.EditIDFRequest(model);
                     }
                     else
@@ -86,8 +87,11 @@ namespace IOAS.Controllers
             model.ListAction = PatentIS.ActionList();
             model.TMListAction = PatentIS.TMActionList();
             model.CRListAction = PatentIS.CRActionList();
+            model.DPListAction = PatentIS.DesignActionList();
             model.Annex.ListStage = PatentIS.StageList();
             model.Trade.Catlist = PatentIS.TMCategory();
+            if(model.IDFType!="DesignPatent")
+                model.DesignClass.ClassList = PatentIS.DPClass();
             return View(model);
 
         }
@@ -108,19 +112,23 @@ namespace IOAS.Controllers
             model.ListAction = PatentIS.ActionList();
             model.TMListAction = PatentIS.TMActionList();
             model.CRListAction = PatentIS.CRActionList();
+            model.DPListAction = PatentIS.DesignActionList();
             model.Annex.ListStage = PatentIS.StageList();
             model.Annex.ListIndustry = PatentIS.IndustryList();
             model.Annex.ListIndustry1 = PatentIS.IndustryList1();
             model.Annex.IITMode = PatentIS.CommericaliseMode();
             model.Annex.JointMode = PatentIS.CommericaliseMode1();
             model.Trade.Catlist = PatentIS.TMCategory();
+            model.DesignClass.ClassList = PatentIS.DPClass();
             ViewBag.CRCat = PatentIS.CRCategory();
             ViewBag.Nature = PatentIS.CRNature();
-            ViewBag.CRClass = PatentIS.CRClass();            
+            ViewBag.CRClass = PatentIS.CRClass();
             if (idf.IDFType == "Trademark")
                 idf.RequestedAction = idf.RequestedTMAction;
             else if (idf.IDFType == "Copyright")
                 idf.RequestedAction = idf.RequestedCRAction;
+            else if (idf.IDFType == "DesignPatent")
+                idf.RequestedAction = idf.RequestedDPAction;
             if (idf.isDraft == "Form")
             {
                 if (idf.formUpdate == false)    

@@ -53,6 +53,11 @@ namespace IOAS.GenericServices
                             idf.RequestedCRAction = query.RequestedAction;
                             idf.RequestedCRtxtAction = query.RequestedActionOthers;
                         }
+                        else if (idf.IDFType == "DesignPatent")
+                        {
+                            idf.RequestedDPAction = query.RequestedAction;
+                            idf.RequestedDPtxtAction = query.RequestedActionOthers;                            
+                        }
                         else
                         {
                             idf.RequestedAction = query.RequestedAction;
@@ -239,6 +244,18 @@ namespace IOAS.GenericServices
                                 }
                                 idf.Trade.TAppl = tradevm;
                             }
+                        }
+                        if (idf.IDFType == "DesignPatent")
+                        {
+                            idf.DesignClass.ClassList = vm.DesignClass.ClassList;
+                            var dp = context.tbl_DesignClasses.Where(m => m.FileNo == vm.FileNo).Select(m =>m.Index).ToList();
+                            if (dp.Count > 0)
+                            {
+                                foreach(var cl in dp)
+                                {
+                                    idf.DesignClass.ClassList[cl].Selected = true;
+                                }
+                            }                            
                         }
                         List<PatFilesVM> fvm = new List<PatFilesVM>();
                         var upfiles = context.tbl_files_PatentRequest.Where(m => m.FileNo == vm.FileNo).Select(m => m.DocId).ToList();
@@ -511,6 +528,27 @@ namespace IOAS.GenericServices
                                     pat.SaveChanges();
                                 }
                             }
+                        }                        
+                        if(model.IDFType== "DesignPatent")
+                        {                           
+                         int sn = 1; int indexcl = 0;
+                         foreach (var dc in model.DesignClass.ClassList)
+                         {
+                           if (dc.Selected == true)
+                           {
+                               tbl_DesignClasses a = new tbl_DesignClasses()
+                               {
+                                  Sno = sn,
+                                   FileNo = model.FileNo,
+                                   Class =dc.Value,
+                                   Index = indexcl
+                               };
+                               pat.tbl_DesignClasses.Add(a);
+                               pat.SaveChanges();
+                               ++sn; ++indexcl;
+                           }
+                           else { ++indexcl; }
+                         }                                                     
                         }
                         if (model.IDFType == "Trademark")
                         {
@@ -540,7 +578,7 @@ namespace IOAS.GenericServices
                                         tbl_Trade_Applicantdetail tappl = new tbl_Trade_Applicantdetail()
                                         {
                                             FileNo = model.FileNo,
-                                            Sno = j,
+                                            Sno = aj,
                                             Organisation = appln.Organisation,
                                             AddressOfService = appln.AddressOfService,
                                             Country = appln.Country,
@@ -555,7 +593,6 @@ namespace IOAS.GenericServices
                                         ++aj;
                                     }
                                 }
-
                             }
                         }
                         // Version history 
@@ -831,7 +868,7 @@ namespace IOAS.GenericServices
                                         tbl_trx_Trade_Applicantdetail tappl = new tbl_trx_Trade_Applicantdetail()
                                         {
                                             FileNo = model.FileNo,
-                                            Sno = j,
+                                            Sno = aj,
                                             VersionId = 1,
                                             Organisation = appln.Organisation,
                                             AddressOfService = appln.AddressOfService,
@@ -847,7 +884,48 @@ namespace IOAS.GenericServices
                                         ++aj;
                                     }
                                 }
-
+                            }
+                        }
+                        if (model.IDFType == "DesignPatent")
+                        {
+                            int sn = 1; int indexcl = 0;
+                            foreach (var dc in model.DesignClass.ClassList)
+                            {
+                                if (dc.Selected == true)
+                                {
+                                    tbl_DesignClasses a = new tbl_DesignClasses()
+                                    {
+                                        Sno = sn,
+                                        FileNo = model.FileNo,
+                                        Class =dc.Value,
+                                        Index = indexcl
+                                    };
+                                    pat.tbl_DesignClasses.Add(a);
+                                    pat.SaveChanges();
+                                    ++sn; ++indexcl;
+                                }
+                                else { ++indexcl; }
+                            }
+                        }
+                        if (model.IDFType == "DesignPatent")
+                        {
+                            int des = 1;int ind = 0;
+                            foreach (var dp in model.DesignClass.ClassList)
+                            {
+                                if (dp.Selected == true)
+                                {
+                                    tbl_trx_DesignClasses dc = new tbl_trx_DesignClasses()
+                                    {
+                                        Class =dp.Value,                                        
+                                        FileNo = model.FileNo,
+                                        Index = ind,
+                                        Sno = des
+                                    };
+                                    pat.tbl_trx_DesignClasses.Add(dc);
+                                    pat.SaveChanges();
+                                    ++des;++ind;
+                                }
+                                else { ++ind; }
                             }
                         }
                         if (file[0] != null)
@@ -1419,6 +1497,35 @@ namespace IOAS.GenericServices
                                 }
                             }
                         }
+                        else if (model.IDFType == "DesignPatent")
+                        {
+                            int sn = 1; int indexcl = 0;
+                            var cl = pat.tbl_DesignClasses.Where(m => m.FileNo == model.FileNo).ToList();
+                            if (cl.Count > 0)
+                            {
+                                pat.tbl_DesignClasses.RemoveRange(cl);
+                                pat.SaveChanges();
+                            }
+                            foreach (var dc in model.DesignClass.ClassList)
+                            {
+                                if (dc.Selected == true)
+                                {
+                                    tbl_DesignClasses a = new tbl_DesignClasses()
+                                    {
+                                        Sno = sn,
+                                        FileNo = model.FileNo,
+                                        Class =dc.Value,
+                                        Index = indexcl                                        
+                                    };
+                                    pat.tbl_DesignClasses.Add(a);
+                                    pat.SaveChanges();
+                                    ++sn; ++indexcl;
+                                }
+                                else { ++indexcl; }
+                            }
+                            pat.SaveChanges();
+
+                        }
                         // Version history only if IP team needs clarification
                         var status = pat.tblIDFRequest.FirstOrDefault(m => m.FileNo == model.FileNo);
                         if (status.Status == "Clarification needed")
@@ -1737,6 +1844,35 @@ namespace IOAS.GenericServices
                                         }
                                     }
                                 }                            }
+                            else if (model.IDFType == "DesignPatent")
+                            {
+                                int tsn = 1; int tindexcl = 0;
+                                var tcl = pat.tbl_trx_DesignClasses.Where(m => m.FileNo == model.FileNo).ToList();
+                                if (tcl.Count > 0)
+                                {
+                                    pat.tbl_trx_DesignClasses.RemoveRange(tcl);
+                                    pat.SaveChanges();
+                                }
+                                foreach (var dc in model.DesignClass.ClassList)
+                                {
+                                    if (dc.Selected == true)
+                                    {
+                                        tbl_trx_DesignClasses a = new tbl_trx_DesignClasses()
+                                        {
+                                            Sno = tsn,
+                                            FileNo = model.FileNo,
+                                            Class =dc.Value,
+                                            Index = tindexcl
+                                        };
+                                        pat.tbl_trx_DesignClasses.Add(a);
+                                        pat.SaveChanges();
+                                        ++tsn; ++tindexcl;
+                                    }
+                                    else { ++tindexcl; }
+                                }
+                                pat.SaveChanges();
+
+                            }
                             string filepath = pat.tbl_mst_filepath.Where(m => m.Category == "PatentDocument").Select(m => m.FilePath).FirstOrDefault();
                             if (!Directory.Exists(filepath))
                             {
@@ -2315,7 +2451,7 @@ namespace IOAS.GenericServices
             List<IDFRequestVM> idf = new List<IDFRequestVM>();
             using (var context = new PatentISEntities())
             {
-                var query = context.tblIDFRequest.Where(m => m.CreatedBy == uname).Select(m => new { m.FileNo, m.IDFType, m.PrimaryInventorType, m.PrimaryInventorName, m.PIDepartment, m.Status, m.Remarks }).ToList();
+                var query = context.tblIDFRequest.Where(m => m.CreatedBy == uname).Select(m => new { m.FileNo, m.IDFType, m.PrimaryInventorType, m.PrimaryInventorName, m.PIDepartment, m.Status, m.Remarks }).OrderByDescending(m=>m.FileNo).ToList();
                 if (query.Count > 0)
                 {
                     for (int i = 0; i < query.Count; i++)
@@ -2618,6 +2754,9 @@ namespace IOAS.GenericServices
                             idf.RequestedTMAction = idf.RequestedAction;
                         else if (idf.IDFType == "Copyright")
                             idf.RequestedCRAction = idf.RequestedAction;
+                        else if (idf.IDFType == "DesignPatent")                        
+                            idf.RequestedDPAction = idf.RequestedAction;
+                        
                         idf.SourceOfInvention = query.SourceOfInvention;
                         idf.Summary = query.Summary;
                         idf.SupportInformation = query.SupportInformation;

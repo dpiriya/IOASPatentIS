@@ -1269,6 +1269,9 @@
     <Compile Include="tbl_CR_Publish.cs">
       <DependentUpon>PatentISDataModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="tbl_DesignClasses.cs">
+      <DependentUpon>PatentISDataModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="tbl_draft_AnnexB1.cs">
       <DependentUpon>PatentISDataModel.tt</DependentUpon>
     </Compile>
@@ -1339,6 +1342,9 @@
       <DependentUpon>PatentISDataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="tbl_trx_CR_Publish.cs">
+      <DependentUpon>PatentISDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_trx_DesignClasses.cs">
       <DependentUpon>PatentISDataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="tbl_trx_IDFRequest.cs">

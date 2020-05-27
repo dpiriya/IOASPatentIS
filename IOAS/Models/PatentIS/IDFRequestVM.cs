@@ -41,14 +41,17 @@ namespace IOAS.Models.PatentIS
         public string RequestedAction { get; set; }
         public string RequestedCRAction { get; set; }
         public string RequestedTMAction { get; set; }
+        public string RequestedDPAction { get; set; }
         public string RequestedtxtAction { get; set; }
         public string RequestedCRtxtAction { get; set; }
+        public string RequestedDPtxtAction { get; set; }
         public string RequestedActionOthers { get; set; }
         public string Remarks { get; set; }
         public string Status { get; set; }
         public List<string> ListAction { get; set; }
         public List<string> TMListAction { get; set; }
         public List<string> CRListAction { get; set; }
+        public List<string> DPListAction { get; set; }
         public string CreatedBy { get; set; }
         public Nullable<System.DateTime> CreatedOn { get; set; }
         public string ModifiedBy { get; set; }
@@ -60,6 +63,7 @@ namespace IOAS.Models.PatentIS
         public List<ApplicantVM> Appl { get; set; }          
         public AnnexureB1VM Annex { get; set; }
         public TradeVM Trade { get; set; }
+        public DesignClassVM DesignClass { get; set; }
         public CopyRightVM CR { get; set; }
         public List<PatFilesVM> Files { get; set; }
         [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
@@ -72,6 +76,7 @@ namespace IOAS.Models.PatentIS
             Files = new List<PatFilesVM>();
             Trade = new TradeVM();
             CR = new CopyRightVM();
+            DesignClass = new DesignClassVM();
            
         }
     }
