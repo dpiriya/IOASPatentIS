@@ -1526,6 +1526,35 @@ namespace IOAS.GenericServices
                             pat.SaveChanges();
 
                         }
+                        string filepath = pat.tbl_mst_filepath.Where(m => m.Category == "PatentDocument").Select(m => m.FilePath).FirstOrDefault();
+                        if (!Directory.Exists(filepath))
+                        {
+                            return "Path Error";
+                        }
+                        filepath = filepath + model.FileNo + "\\IDFRequest\\";
+                        if (!Directory.Exists(filepath))
+                        {
+                            Directory.CreateDirectory(filepath);
+                        }
+                        int upfiles = pat.tbl_files_PatentRequest.Where(m => m.FileNo == model.FileNo).Count();
+                        int f = upfiles + 1;
+                        foreach (var item in file)
+                        {
+                            if (item != null && item.ContentLength > 0)
+                            {
+                                tbl_files_PatentRequest ufiles = new tbl_files_PatentRequest()
+                                {
+                                    FileNo = model.FileNo,
+                                    DocId = f,
+                                    DocName = item.FileName,
+                                    DocPath = filepath
+                                };
+                                pat.tbl_files_PatentRequest.Add(ufiles);
+                                item.SaveAs(filepath + item.FileName);
+                                pat.SaveChanges();
+                            }
+                        }
+                        pat.SaveChanges();
                         // Version history only if IP team needs clarification
                         var status = pat.tblIDFRequest.FirstOrDefault(m => m.FileNo == model.FileNo);
                         if (status.Status == "Clarification needed")
@@ -1559,8 +1588,8 @@ namespace IOAS.GenericServices
                                 RelevantInformation = model.RelevantInformation,
                                 RequestedAction = model.RequestedAction,
                                 VersionId = ver,
-                                IDFType=model.IDFType,
-                                Status="Submitted to IPOffice",
+                                IDFType = model.IDFType,
+                                Status = "Submitted to IPOffice",
                                 CreatedBy = uname,
                                 CreatedOn = DateTime.Now
                             };
@@ -1595,7 +1624,7 @@ namespace IOAS.GenericServices
                                         Dept = coinven.Dept,
                                         ContactNo = coinven.Ph,
                                         EmailId = coinven.Mail,
-                                        InstId=coinven.InstId,
+                                        InstId = coinven.InstId,
                                         VersionId = ver,
                                         CreatedBy = uname,
                                         CreatedOn = DateTime.Now
@@ -1787,13 +1816,13 @@ namespace IOAS.GenericServices
                                     {
                                         VersionId = ver,
                                         Category = model.Trade.Category,
-                                       Class=model.Trade.Class,
-                                       Description=model.Trade.Description,
-                                       FileNo=model.FileNo,
-                                       Language=model.Trade.Language,
-                                       TMImage=model.Trade.TMImage,
-                                       TMName=model.Trade.TMName,
-                                       TMStatement=model.Trade.TMStatement
+                                        Class = model.Trade.Class,
+                                        Description = model.Trade.Description,
+                                        FileNo = model.FileNo,
+                                        Language = model.Trade.Language,
+                                        TMImage = model.Trade.TMImage,
+                                        TMName = model.Trade.TMName,
+                                        TMStatement = model.Trade.TMStatement
                                     };
                                     pat.tbl_trx_Trademark.Add(ttr);
                                     pat.SaveChanges();
@@ -1804,17 +1833,17 @@ namespace IOAS.GenericServices
                                         {
                                             tbl_trx_Trade_Applicantdetail txapp = new tbl_trx_Trade_Applicantdetail()
                                             {
-                                                Organisation=a.Organisation,
+                                                Organisation = a.Organisation,
                                                 FileNo = model.FileNo,
-                                                AddressOfService=a.AddressOfService,
-                                                Country=a.Country,
-                                                Jurisdiction=a.Jurisdiction,
-                                                LegalStatus=a.LegalStatus,
-                                                Nature=a.Nature,
-                                                Sno=tap,
+                                                AddressOfService = a.AddressOfService,
+                                                Country = a.Country,
+                                                Jurisdiction = a.Jurisdiction,
+                                                LegalStatus = a.LegalStatus,
+                                                Nature = a.Nature,
+                                                Sno = tap,
                                                 VersionId = ver,
-                                                CreatedBy=uname,
-                                                CreatedOn=DateTime.Now                                                
+                                                CreatedBy = uname,
+                                                CreatedOn = DateTime.Now
                                             }; pat.tbl_trx_Trade_Applicantdetail.Add(txapp);
                                             pat.SaveChanges();
                                             ++tap;
@@ -1843,7 +1872,7 @@ namespace IOAS.GenericServices
                                             ++crp;
                                         }
                                     }
-                                }                            }
+                                } }
                             else if (model.IDFType == "DesignPatent")
                             {
                                 int tsn = 1; int tindexcl = 0;
@@ -1861,7 +1890,7 @@ namespace IOAS.GenericServices
                                         {
                                             Sno = tsn,
                                             FileNo = model.FileNo,
-                                            Class =dc.Value,
+                                            Class = dc.Value,
                                             Index = tindexcl
                                         };
                                         pat.tbl_trx_DesignClasses.Add(a);
@@ -1873,37 +1902,9 @@ namespace IOAS.GenericServices
                                 pat.SaveChanges();
 
                             }
-                            string filepath = pat.tbl_mst_filepath.Where(m => m.Category == "PatentDocument").Select(m => m.FilePath).FirstOrDefault();
-                            if (!Directory.Exists(filepath))
-                            {
-                                return "Path Error";
-                            }
-                            filepath = filepath + model.FileNo + "\\IDFRequest\\";
-                            if (!Directory.Exists(filepath))
-                            {
-                                Directory.CreateDirectory(filepath);
-                            }
-                            int upfiles = pat.tbl_files_PatentRequest.Where(m => m.FileNo == model.FileNo).Count();
-                            int f = upfiles + 1;
-                            foreach (var item in file)
-                            {
-                                if (item != null && item.ContentLength > 0)
-                                {
-                                    tbl_files_PatentRequest ufiles = new tbl_files_PatentRequest()
-                                    {
-                                        FileNo = model.FileNo,
-                                        DocId = f,
-                                        DocName = item.FileName,
-                                        DocPath = filepath
-                                    };
-                                    pat.tbl_files_PatentRequest.Add(ufiles);
-                                    item.SaveAs(filepath + item.FileName);
-                                    pat.SaveChanges();
-                                }
-                            }
-
-                            pat.SaveChanges();
                         }
+                            
+                        
                         else
                         {
                             var tridf = pat.tbl_trx_IDFRequest.Where(m => m.FileNo == model.FileNo).OrderByDescending(m=>m.VersionId).FirstOrDefault();
@@ -2434,6 +2435,7 @@ namespace IOAS.GenericServices
                                     }
                                 }
                             }
+
                         }
                         transaction.Commit();
                         return "Success";

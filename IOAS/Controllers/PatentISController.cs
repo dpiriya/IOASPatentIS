@@ -1,4 +1,5 @@
 ﻿using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.Shared;
 using IOAS.GenericServices;
 using IOAS.Infrastructure;
 using IOAS.Models.PatentIS;
@@ -258,12 +259,26 @@ namespace IOAS.Controllers
 
             List<IDFRequestReport> model = new List<IDFRequestReport>();
             ReportDocument rpt = new ReportDocument();
-            rpt.FileName = Server.MapPath("~/Report/IDFRequest.rpt");
+            rpt.Load(Server.MapPath("~/Report/IDFRequestrpt.rpt"));
+            //ConnectionInfo connectInfo = new ConnectionInfo()
+            //{
+            //    ServerName = strServer,
+            //    DatabaseName = strDatabase,
+            //    UserID = strUserID,
+            //    Password = strPwd
+            //};
+            //rpt.SetDatabaseLogon(strUserID, strPwd);
+            //foreach (Table tbl in rpt.Database.Tables)
+            //{
+            //    tbl.LogOnInfo.ConnectionInfo = connectInfo;
+            //    tbl.ApplyLogOnInfo(tbl.LogOnInfo);
+            //}
+            //rpt.FileName = Server.MapPath("~/Report/IDFRequestrpt.rpt");
             //string conn = "PatentIS";
-            
-            for (int i = 0; i < rpt.DataSourceConnections.Count; i++)
-                //rpt.DataSourceConnections[i].SetConnection("10.18.0.7", conn, "sa", "ICSR@123#");
-                rpt.DataSourceConnections[i].SetConnection(strServer, strDatabase, strUserID, strPwd);
+
+            //for (int i = 0; i < rpt.DataSourceConnections.Count; i++)
+            //    //rpt.DataSourceConnections[i].SetConnection("10.18.0.7", conn, "sa", "ICSR@123#");
+            //    rpt.DataSourceConnections[i].SetConnection(strServer, strDatabase, strUserID, strPwd);
             model = PatentService.GenerateIDFReport(fno);
 
             if (model.Count > 0)

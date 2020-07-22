@@ -44,6 +44,7 @@ namespace IOAS.Models.PatentIS
         public List<ApplicantVM> Appl { get; set; }
         public TraderptVM Trade { get; set; }
         public CopyRightrptVM CR { get; set; }
+       
         public IDFRequestReport()
         {
             CoIn = new List<CoInventorVM>();

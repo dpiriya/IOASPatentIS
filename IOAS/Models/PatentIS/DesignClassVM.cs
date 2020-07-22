@@ -13,8 +13,7 @@ namespace IOAS.Models.PatentIS
         public int Sno { get; set; }
         public long FileNo { get; set; }
         public int Index { get; set; }
-        public int Class { get; set; }
-        
+        public int Class { get; set; }        
         public List<SelectListItem> ClassList { get; set; }
     }
 }

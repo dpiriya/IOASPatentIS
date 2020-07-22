@@ -106,10 +106,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/15/2019 13:28:08</publishTime>
     </File>
     <File Include="bin/DynamicReports.dll">
-      <publishTime>05/27/2020 13:23:35</publishTime>
+      <publishTime>06/02/2020 10:17:51</publishTime>
     </File>
     <File Include="bin/DynamicReports.pdb">
-      <publishTime>05/27/2020 13:23:35</publishTime>
+      <publishTime>06/02/2020 10:17:51</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>05/13/2020 15:58:01</publishTime>
@@ -121,19 +121,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/13/2020 15:58:01</publishTime>
     </File>
     <File Include="bin/IOAS.DataModel.dll">
-      <publishTime>05/27/2020 13:23:35</publishTime>
+      <publishTime>06/02/2020 10:17:52</publishTime>
     </File>
     <File Include="bin/IOAS.DataModel.dll.config">
       <publishTime>05/26/2020 19:39:36</publishTime>
     </File>
     <File Include="bin/IOAS.DataModel.pdb">
-      <publishTime>05/27/2020 13:23:35</publishTime>
+      <publishTime>06/02/2020 10:17:52</publishTime>
     </File>
     <File Include="bin/IOAS.dll">
-      <publishTime>05/27/2020 13:23:38</publishTime>
+      <publishTime>06/05/2020 17:21:48</publishTime>
     </File>
     <File Include="bin/IOAS.pdb">
-      <publishTime>05/27/2020 13:23:38</publishTime>
+      <publishTime>06/05/2020 17:21:48</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
       <publishTime>05/13/2020 15:58:01</publishTime>
@@ -1125,6 +1125,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Report/IDFRequest.rpt">
       <publishTime>05/13/2020 15:57:59</publishTime>
     </File>
+    <File Include="Report/IDFRequestrpt.rpt">
+      <publishTime>06/05/2020 17:17:14</publishTime>
+    </File>
     <File Include="Scripts/Account/Addrole.js">
       <publishTime>05/13/2020 15:57:59</publishTime>
     </File>
@@ -1315,7 +1318,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/13/2020 15:57:59</publishTime>
     </File>
     <File Include="Views/PatentIS/IDFRequest.cshtml">
-      <publishTime>05/25/2020 20:02:39</publishTime>
+      <publishTime>05/27/2020 22:21:49</publishTime>
     </File>
     <File Include="Views/PatentIS/IDFRequestList.cshtml">
       <publishTime>05/13/2020 15:57:59</publishTime>
@@ -1429,7 +1432,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/13/2020 15:57:59</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>05/27/2020 13:23:39</publishTime>
+      <publishTime>06/02/2020 10:17:54</publishTime>
     </File>
   </ItemGroup>
 </Project>
